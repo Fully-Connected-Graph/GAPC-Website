@@ -20,19 +20,19 @@ photo album
 </a>
 to see how it was last year!
 
-<a href="https://www.svcover.nl/photos/1522"  style="overflow: hidden;">
-    <video src="/GAPC-2024/assets/gapc-2022-slideshow.mp4" autoplay muted loop>
-    </video>
+<a href="https://www.svcover.nl/photos/1522"  class="overflow-hidden">
+    <video src="/GAPC-2024/assets/gapc-2022-slideshow.mp4" autoplay muted loop class="h-60 m-auto"/>
 </a>
 
 <div>
     <center>
-        <h1>
-            <span style="font-size:.75em;">
+        <h1 id="fcg">
+            <span class="text-lg">
                 Event organised by
             </span>
             <br/>
             Fully Connected Graph
+            <img src="/GAPC-2024/assets/fcg.png" class="ml-4 h-10 inline-block"/>
         </h1>
     </center>
 
