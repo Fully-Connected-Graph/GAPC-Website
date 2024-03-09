@@ -1,5 +1,5 @@
 ---
-thumbnail: /GAPC-2023/covers/building.png
+thumbnail: /GAPC-2024/assets/thumbnails/building.png
 ---
 
 ## Location

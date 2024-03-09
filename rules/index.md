@@ -1,14 +1,14 @@
 ---
-thumbnail: /GAPC-2023/covers/rules.png
+thumbnail: /GAPC-2024/assets/thumbnails/rules.png
 ---
 
-# Rules
+## Rules
 
 ### Definitions
 
 * GAPC: The Groningen Algorithm Programming Contest 2023
 * Organisation: The event is organised by the members of Fully Connected Graph, the programming committee of the study association Cover
-* Website: The website is maintained by the organisation and available at https://fully-connected-graph.github.io/GAPC-2023/
+* Website: The website is maintained by the organisation and available at https://fully-connected-graph.github.io/GAPC-2024/
 * Discord: The GAPC discord mentioned <a href="https://discord.com/invite/JfzxyBHPsH" target="_blank">FCG Discord</a>.
 * Jury: The group responsible for creating the problem set and checking the solutions submitted by the participants.
 * Technical staff: The group of people responsible for the system (the digital environment, jury system, printing, etc.).

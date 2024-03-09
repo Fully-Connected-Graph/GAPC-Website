@@ -1,5 +1,5 @@
 ---
-thumbnail: /GAPC-2023/covers/clock.png
+thumbnail: /GAPC-2024/assets/thumbnails/lecture.png
 ---
 
 ## Registration
