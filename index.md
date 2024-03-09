@@ -1,5 +1,3 @@
-## Welcome to the GAPC 2024 website!
-
 ## About
 
 The Groningen Algorithmic Programming Contest (GAPC) is a 4 hour competitive programming contest, where students from (but not limited to) University of Groningen form teams of 1 to 3 people. The target is to solve the most problems and win the champion's cup.
@@ -8,7 +6,7 @@ The event will take place on the Saturday 29th of April in the Bernoulliborg, at
 
 ## Contest
 
-This contest is open to all students from a university within the Benelux region. Before registering, please read the rules of the contest and these can be found [here](/GAPC-2024/rules/). To participate, each team will need to bring their own laptop. 
+This contest is open to all students from a university within the Benelux region. Before registering, please read the rules of the contest and these can be found [here](/GAPC-2024/rules/). To participate, each team will need to bring their own laptop.
 
 To solve the problems, you will be able to use Java, Python, C, C++ and Haskell. In the end, only the captain of the team needs to make the registration and it can be done [here](/GAPC-2024/register/).
 
@@ -49,7 +47,7 @@ In the present, our main focus is on events about competitive programming and ma
 
 </div>
 
-## Contact 
+## Contact
 
 If you have any questions, please send us an email at programming_committee@svcover.nl
 
