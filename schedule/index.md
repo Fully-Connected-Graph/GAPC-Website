@@ -1,4 +1,5 @@
 ---
+title: Schedule
 thumbnail: /GAPC-2024/assets/thumbnails/lecture.png
 ---
 

@@ -1,5 +1,6 @@
 ---
-thumbnail: /GAPC-2024/assets/thumbnails/lecture.png
+title: Registration
+thumbnail: /GAPC-2024/assets/thumbnails/winners.jpeg
 ---
 
 ## Registration

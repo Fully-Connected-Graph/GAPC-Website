@@ -1,5 +1,6 @@
 ---
-thumbnail: /GAPC-2024/assets/thumbnails/rules.png
+title: Rules
+thumbnail: /GAPC-2024/assets/thumbnails/looking-at-papers.jpeg
 ---
 
 ## Rules

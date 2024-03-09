@@ -1,5 +1,6 @@
 ---
-thumbnail: /GAPC-2024/assets/thumbnails/building.png
+title: Location
+thumbnail: /GAPC-2024/assets/thumbnails/contest.jpeg
 ---
 
 ## Location
