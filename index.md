@@ -23,28 +23,26 @@ to see how it was last year!
 </a>
 
 <div>
-    <center>
-        <h1 id="fcg">
-            <span class="text-lg">
-                Event organised by
-            </span>
-            <br/>
+    <h1 id="fcg" class="text-center">
+        <span class="text-lg">
+            Event organised by
+        </span>
+        <br/>
+        <span class="text-3xl">
             Fully Connected Graph
-            <img src="/GAPC-2024/assets/fcg.png" class="ml-4 h-10 inline-block"/>
-        </h1>
-    </center>
-
-<div class="flex flex-col lg:flex-row ">
-<div>
-Fully Connected Graph (a.k.a. FCG) is a committee whose aim is to create an environment for students to challenge and improve their technical abilities.
-<br/><br/>
-In the present, our main focus is on events about competitive programming and machine learning, but we expect to extend our range of events in the next academic year.
-</div>
-<div>
-    <img src="/GAPC-2024/assets/fcg-members.png">
-</div>
-</div>
-
+        </span>
+        <img src="/GAPC-2024/assets/fcg.png" class="ml-4 h-10 inline-block"/>
+    </h1>
+    <div class="flex flex-col lg:flex-row ">
+        <div class="flex-1">
+            Fully Connected Graph (a.k.a. FCG) is a committee whose aim is to create an environment for students to challenge and improve their technical abilities.
+            <br/><br/>
+            In the present, our main focus is on events about competitive programming and machine learning, but we expect to extend our range of events in the next academic year.
+        </div>
+        <div class="flex-1">
+            <img src="/GAPC-2024/assets/fcg-members.png"/>
+        </div>
+    </div>
 </div>
 
 ## Contact
