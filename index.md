@@ -34,7 +34,7 @@ to see how it was last year!
         </h1>
     </center>
 
-<div class="flex flex-col md:flex-row ">
+<div class="flex flex-col lg:flex-row ">
 <div>
 Fully Connected Graph (a.k.a. FCG) is a committee whose aim is to create an environment for students to challenge and improve their technical abilities.
 <br/><br/>
