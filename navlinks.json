@@ -1,18 +1,22 @@
 [
   {
-    "name": "Sponsors",
-    "url": "/sponsors"
-  },
-  {
-    "name": "Location",
-    "url": "/location"
+    "name": "Register",
+    "url": "/register"
   },
   {
     "name": "Rules",
     "url": "/rules"
   },
   {
-    "name": "Register",
-    "url": "/register"
+    "name": "Location",
+    "url": "/location"
+  },
+  {
+    "name": "Sponsors",
+    "url": "/sponsors"
+  },
+  {
+    "name": "Schedule",
+    "url": "/schedule"
   }
 ]

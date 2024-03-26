@@ -5,11 +5,24 @@ thumbnail: /GAPC-2024/assets/thumbnails/winners.jpeg
 
 ## Registration
 
-This is an open contest to all students from a university within the Benelux region. It has a limit of total 50 teams. Before registering, please read the rules of the contest and these can be found [here](./rules).
+This is an open contest to all students from within the Groningen region. It has a limit of total 40 teams. Before registering, please read the rules of the contest and these can be found [here](./rules).
 
-In the contest, the teams can have 2 or 3 members. There is also the option to participate alone or to register alone and then be added in a random team. Both options can be requested in the registration form. Regarding teams, only the captain needs to make the registration. The teams formed with students from the University of Groningen or Hanze University of Applied Sciences are considered local teams. To register, click the bellow button. (Deadline: 27th of April)
+In the contest, the teams can have 2 or 3 members. There is also the option to register alone and then be added in a random team. Both options can be requested in the registration form. Regarding teams, only the captain needs to make the registration. To register, click the bellow button. (Deadline: 2nd of May)
 
-Teams that have in composition at least one member who is not a student at the before mentioned universities, will be regarded as external teams. There is a limit of 15 external teams. To register click the bellow button. (New Deadline: 27th of April)
+<div style='text-align:center;'>
+    <a  href="https://forms.gle/4KbZ6jK6gcEmCgcv7" target="_blank"  style="cursor:pointer; font-size:20px; font-weight:bold; text-decoration: none; display:inline-block; width:200px; height:50px; background-color:#4686ff; color:white; line-height:50px; border-radius:8px" class="registrationButton" >
+        Register
+    </a> 
+</div>
+
+<style>
+    .registrationButton:hover {
+    background-color: white !important;
+    color:#4686ff !important;
+    border: 1px solid #4686ff;
+    transition: 0.4s ease-in-out;
+    }
+</style>
 
 ## Contact
 

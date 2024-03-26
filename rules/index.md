@@ -7,10 +7,10 @@ thumbnail: /GAPC-2024/assets/thumbnails/looking-at-papers.jpeg
 
 ### Definitions
 
-- GAPC: The Groningen Algorithm Programming Contest 2023
-- Organisation: The event is organised by the members of Fully Connected Graph, the programming committee of the study association Cover
-- Website: The website is maintained by the organisation and available at https://fully-connected-graph.github.io/GAPC-2024/
-- Discord: The GAPC discord mentioned <a href="https://discord.com/invite/JfzxyBHPsH" target="_blank">FCG Discord</a>.
+- GAPC: The Groningen Algorithm Programming Contest 2024
+- Organisation: The event is organised by the members of Fully Connected Graph
+- Website: The website is maintained by the organisation and available at <a href="https://fully-connected-graph.github.io/GAPC-2024/" target="_blank">here</a>.
+- Discord: The GAPC discord is the FCG discord <a href="https://discord.com/invite/JfzxyBHPsH" target="_blank">FCG Discord</a>.
 - Jury: The group responsible for creating the problem set and checking the solutions submitted by the participants.
 - Technical staff: The group of people responsible for the system (the digital environment, jury system, printing, etc.).
 - Runners: Volunteers responsible for answering questions and other tasks supervised by the organisation.
@@ -25,16 +25,16 @@ For any questions related to the contest, please contact the organiser either by
 
 ### Introduction
 
-- Participation is recommended to be done in teams of 2 or 3 persons, but participating alone is also an option.
+- Participation is recommended to be done in teams of 2 or 3 persons.
 
 ### Teams
 
-This is an open contest to all students from a university within the Benelux region. Regarding registration, the teams formed with students from the University of Groningen or Hanze University of Applied Sciences are considered local teams. Teams that have in composition at least one member who is not a student at the before mentioned universities, will be regarded as external teams. There is a limit of 15 external teams.
+This is an open contest to all students within Groningen region.
 
 All the teams:
 
 - Participate for free.
-- Participate in the teams' pool for the title “Winner of the Groningen Algorithm Programming Contest 2023”.
+- Participate in the teams' pool for the title “Winner of the Groningen Algorithm Programming Contest 2024”.
 
 ### Photos and videos
 
@@ -60,8 +60,7 @@ There will be 1 or more people that will capture digital content (photo, video e
 - A solution for a problem has to be written in C99, C++ (version 14 or later will be available), Python (versions 3 will be available), Java (version 11 or later) or Haskell (ghc version 9.0.2), unless problem statement explicitly states otherwise.
 - A team is disqualified if they submit a harmful code that disrupts the contest.
 - A submission can use the standard library of the language, which means that libraries such as "numpy" are not available.
-- Each team will use at most one laptop that is brought by the team.
-- There will be access to the internet. However, it is forbidden to communicate through the internet with other people in any way (sending messages, posting on forums, etc.). Actions like searching for syntax problems or algorithms are allowed. Moreover, the usage of any tools powered by AI that generates code is forbidden, including, but not limited to, chatGPT, GitHub Copilot, Blackbox. If you have any similar extensions on your device, you must deactivate them before the start of the contest.
+- More details about the system will be given in due time.
 
 ## Judgement
 
@@ -87,7 +86,7 @@ There will be 1 or more people that will capture digital content (photo, video e
   - WRONG-ANSWER The output of your program was incorrect. This can happen simply because your solution is not correct, but remember that your output must comply exactly with the specifications of the judges.
   - TOO-LATE Bummer, you submitted after the contest ended! Your submission is stored but will not be processed anymore.
 
-- A link to the documentation of the judging system is <a  href="https://www.domjudge.org/docs/team-manual.pdf" target="_blank">here </a>. As a side note, not all the aspects presented in the link apply to this contest.
+- A link to the documentation of the judging system is <a  href="https://www.domjudge.org/snapshot/manual/team.html" target="_blank">here </a>. As a side note, not all the aspects presented in the link apply to this contest.
 
 ## Score and Leaderboard
 
@@ -99,34 +98,11 @@ There will be 1 or more people that will capture digital content (photo, video e
 ## Special Rules
 
 - A team may be disqualified by the organisation or jury for any activity that jeopardises the contest, such as dislodging extension cords, unauthorised modification, unintended use of contest materials, using a forbidden function or library calls, or distracting behaviour.
-- The participants don’t have access to their phones or any other device besides the laptop that the team is using, during the contest.
+- The participants don’t have access to their phones or any other device besides the contest machine that the team is using, during the contest.
 - The organisation has the right to stop the contest, extend the contest time, temporarily block submissions for all teams, or change the scores in exceptional conditions.
 - In situations where no rule applies, or there is ambiguity about the rules, the organisation decides the outcome.
 - If necessary, the organisation can make changes and exceptions to these rules.
 
 ## Contest machine
 
-The contest machine is brought by the team members and used only by their team members.
-
-## Languages and compilers
-
-The following languages and compilers are available, note not all languages are accepted as submit languages.
-
-- C: gcc 9.3.0
-- C++: g++ 9.3.0
-- Java: javac 11.0.11 (openjdk)
-- Python: Python 3.7.12 (pypy3 7.3.9, gcc 9.3.0)
-- Haskell (ghc 9.0.2)
-
-### Aliases
-
-The following aliases are available for your convenience. The following list of aliases help to compile your programs. Since similar compiler flags are used by DOMjudge using these aliases ensures compiling is done the same locally as on DOMjudge.
-
-- my_gcc='gcc -g -O2 -std=gnu11 -static ${files} -lm'
-- my_g++='g++ -g -O2 -std=gnu++2a -static ${files}'
-- my_javac='javac -encoding UTF-8 -sourcepath . -d . ${files}'
-
-The following aliases help to run your compiled programs. The run_java aliases on your machines actually refer to shell scripts. The difference between the shell scripts and the listed aliases is that the commands are actually run by taskset -c 0 [COMMAND]. This ensures your program is pinned to a single processor core (core #0). As is the case when your programs are run on DOMjudge.
-
-- run_java='java -Dfile.encoding=UTF-8 -XX:+UseSerialGC -Xss64m -Xms1920m -Xmx1920m $1
-- run_python='pypy3 ${files}'
+More details to be announced in due time.

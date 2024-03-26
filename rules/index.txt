@@ -1,16 +1,16 @@
 3:I[5613,[],""]
 5:I[1778,[],""]
 4:["slug","rules","oc"]
-0:["dBaTebd7FM1APFVZ27K_F",[[["",{"children":[["slug","rules","oc"],{"children":["__PAGE__?{\"slug\":[\"rules\"]}",{}]}]},"$undefined","$undefined",true],["",{"children":[["slug","rules","oc"],{"children":["__PAGE__",{},["$L1","$L2",null]]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","$4","children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}]]},[null,["$","html",null,{"lang":"en","children":["$","body",null,{"className":"__className_282848","children":["$L6",["$","main",null,{"className":"mt-0 m-auto max-w-4xl py-20 max-lg:px-4 max-lg:max-w-full","children":["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}]}]]}]}],null]],[[["$","link","0",{"rel":"stylesheet","href":"/GAPC-2024/_next/static/css/839cf7b52e0c4511.css","precedence":"next","crossOrigin":""}],["$","link","1",{"rel":"stylesheet","href":"/GAPC-2024/_next/static/css/bc1d467b7828fdbd.css","precedence":"next","crossOrigin":""}]],"$L7"]]]]
+0:["rIlx_UR1lu3z32m6Xqyo2",[[["",{"children":[["slug","rules","oc"],{"children":["__PAGE__?{\"slug\":[\"rules\"]}",{}]}]},"$undefined","$undefined",true],["",{"children":[["slug","rules","oc"],{"children":["__PAGE__",{},["$L1","$L2",null]]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","$4","children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}]]},[null,["$","html",null,{"lang":"en","children":[null,["$","body",null,{"className":"__className_282848","children":["$L6",["$","main",null,{"className":"mt-0 m-auto max-w-4xl py-20 max-lg:px-4 max-lg:max-w-full","children":["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}]}]]}]]}],null]],[[["$","link","0",{"rel":"stylesheet","href":"/GAPC-2024/_next/static/css/839cf7b52e0c4511.css","precedence":"next","crossOrigin":""}],["$","link","1",{"rel":"stylesheet","href":"/GAPC-2024/_next/static/css/1e0611355ee1bf0c.css","precedence":"next","crossOrigin":""}]],"$L7"]]]]
 9:I[5250,["250","static/chunks/250-ec3a638f2baf0999.js","573","static/chunks/app/%5B%5B...slug%5D%5D/page-68da94f3ce1788e8.js"],""]
-a:I[2129,["250","static/chunks/250-ec3a638f2baf0999.js","15","static/chunks/15-7805824a2111c2c0.js","185","static/chunks/app/layout-dbb5b0d902985219.js"],""]
-8:T2984,<h2>Rules</h2>
+a:I[2129,["250","static/chunks/250-ec3a638f2baf0999.js","15","static/chunks/15-7805824a2111c2c0.js","185","static/chunks/app/layout-7691b0c9b41ce145.js"],""]
+8:T2040,<h2>Rules</h2>
 <h3>Definitions</h3>
 <ul>
-<li>GAPC: The Groningen Algorithm Programming Contest 2023</li>
-<li>Organisation: The event is organised by the members of Fully Connected Graph, the programming committee of the study association Cover</li>
-<li>Website: The website is maintained by the organisation and available at <a href="https://fully-connected-graph.github.io/GAPC-2024/">https://fully-connected-graph.github.io/GAPC-2024/</a></li>
-<li>Discord: The GAPC discord mentioned <a href="https://discord.com/invite/JfzxyBHPsH" target="_blank">FCG Discord</a>.</li>
+<li>GAPC: The Groningen Algorithm Programming Contest 2024</li>
+<li>Organisation: The event is organised by the members of Fully Connected Graph</li>
+<li>Website: The website is maintained by the organisation and available at <a href="https://fully-connected-graph.github.io/GAPC-2024/" target="_blank">here</a>.</li>
+<li>Discord: The GAPC discord is the FCG discord <a href="https://discord.com/invite/JfzxyBHPsH" target="_blank">FCG Discord</a>.</li>
 <li>Jury: The group responsible for creating the problem set and checking the solutions submitted by the participants.</li>
 <li>Technical staff: The group of people responsible for the system (the digital environment, jury system, printing, etc.).</li>
 <li>Runners: Volunteers responsible for answering questions and other tasks supervised by the organisation.</li>
@@ -22,14 +22,14 @@ a:I[2129,["250","static/chunks/250-ec3a638f2baf0999.js","15","static/chunks/15-7
 <h2>Participation</h2>
 <h3>Introduction</h3>
 <ul>
-<li>Participation is recommended to be done in teams of 2 or 3 persons, but participating alone is also an option.</li>
+<li>Participation is recommended to be done in teams of 2 or 3 persons.</li>
 </ul>
 <h3>Teams</h3>
-<p>This is an open contest to all students from a university within the Benelux region. Regarding registration, the teams formed with students from the University of Groningen or Hanze University of Applied Sciences are considered local teams. Teams that have in composition at least one member who is not a student at the before mentioned universities, will be regarded as external teams. There is a limit of 15 external teams.</p>
+<p>This is an open contest to all students within Groningen region.</p>
 <p>All the teams:</p>
 <ul>
 <li>Participate for free.</li>
-<li>Participate in the teams' pool for the title “Winner of the Groningen Algorithm Programming Contest 2023”.</li>
+<li>Participate in the teams' pool for the title “Winner of the Groningen Algorithm Programming Contest 2024”.</li>
 </ul>
 <h3>Photos and videos</h3>
 <p>There will be 1 or more people that will capture digital content (photo, video etc). The materials will be made publicly available afterwards. If you do not want to appear in the photos or want to be removed from them afterwards, please contact the organisation.</p>
@@ -52,8 +52,7 @@ a:I[2129,["250","static/chunks/250-ec3a638f2baf0999.js","15","static/chunks/15-7
 <li>A solution for a problem has to be written in C99, C++ (version 14 or later will be available), Python (versions 3 will be available), Java (version 11 or later) or Haskell (ghc version 9.0.2), unless problem statement explicitly states otherwise.</li>
 <li>A team is disqualified if they submit a harmful code that disrupts the contest.</li>
 <li>A submission can use the standard library of the language, which means that libraries such as &quot;numpy&quot; are not available.</li>
-<li>Each team will use at most one laptop that is brought by the team.</li>
-<li>There will be access to the internet. However, it is forbidden to communicate through the internet with other people in any way (sending messages, posting on forums, etc.). Actions like searching for syntax problems or algorithms are allowed. Moreover, the usage of any tools powered by AI that generates code is forbidden, including, but not limited to, chatGPT, GitHub Copilot, Blackbox. If you have any similar extensions on your device, you must deactivate them before the start of the contest.</li>
+<li>More details about the system will be given in due time.</li>
 </ul>
 <h2>Judgement</h2>
 <ul>
@@ -85,7 +84,7 @@ a:I[2129,["250","static/chunks/250-ec3a638f2baf0999.js","15","static/chunks/15-7
 </ul>
 </li>
 <li>
-<p>A link to the documentation of the judging system is <a  href="https://www.domjudge.org/docs/team-manual.pdf" target="_blank">here </a>. As a side note, not all the aspects presented in the link apply to this contest.</p>
+<p>A link to the documentation of the judging system is <a  href="https://www.domjudge.org/snapshot/manual/team.html" target="_blank">here </a>. As a side note, not all the aspects presented in the link apply to this contest.</p>
 </li>
 </ul>
 <h2>Score and Leaderboard</h2>
@@ -101,35 +100,14 @@ a:I[2129,["250","static/chunks/250-ec3a638f2baf0999.js","15","static/chunks/15-7
 <h2>Special Rules</h2>
 <ul>
 <li>A team may be disqualified by the organisation or jury for any activity that jeopardises the contest, such as dislodging extension cords, unauthorised modification, unintended use of contest materials, using a forbidden function or library calls, or distracting behaviour.</li>
-<li>The participants don’t have access to their phones or any other device besides the laptop that the team is using, during the contest.</li>
+<li>The participants don’t have access to their phones or any other device besides the contest machine that the team is using, during the contest.</li>
 <li>The organisation has the right to stop the contest, extend the contest time, temporarily block submissions for all teams, or change the scores in exceptional conditions.</li>
 <li>In situations where no rule applies, or there is ambiguity about the rules, the organisation decides the outcome.</li>
 <li>If necessary, the organisation can make changes and exceptions to these rules.</li>
 </ul>
 <h2>Contest machine</h2>
-<p>The contest machine is brought by the team members and used only by their team members.</p>
-<h2>Languages and compilers</h2>
-<p>The following languages and compilers are available, note not all languages are accepted as submit languages.</p>
-<ul>
-<li>C: gcc 9.3.0</li>
-<li>C++: g++ 9.3.0</li>
-<li>Java: javac 11.0.11 (openjdk)</li>
-<li>Python: Python 3.7.12 (pypy3 7.3.9, gcc 9.3.0)</li>
-<li>Haskell (ghc 9.0.2)</li>
-</ul>
-<h3>Aliases</h3>
-<p>The following aliases are available for your convenience. The following list of aliases help to compile your programs. Since similar compiler flags are used by DOMjudge using these aliases ensures compiling is done the same locally as on DOMjudge.</p>
-<ul>
-<li>my_gcc='gcc -g -O2 -std=gnu11 -static ${files} -lm'</li>
-<li>my_g++='g++ -g -O2 -std=gnu++2a -static ${files}'</li>
-<li>my_javac='javac -encoding UTF-8 -sourcepath . -d . ${files}'</li>
-</ul>
-<p>The following aliases help to run your compiled programs. The run_java aliases on your machines actually refer to shell scripts. The difference between the shell scripts and the listed aliases is that the commands are actually run by taskset -c 0 [COMMAND]. This ensures your program is pinned to a single processor core (core #0). As is the case when your programs are run on DOMjudge.</p>
-<ul>
-<li>run_java='java -Dfile.encoding=UTF-8 -XX:+UseSerialGC -Xss64m -Xms1920m -Xmx1920m $1</li>
-<li>run_python='pypy3 ${files}'</li>
-</ul>
+<p>More details to be announced in due time.</p>
 2:[false,["$","div",null,{"className":"relative mb-8 h-80 bg-swirl w-screen -translate-x-[calc(50vw-28rem)] max-lg:-translate-x-4 bg-black flex flex-col gap-6 justify-center overflow-hidden","children":[["$","h1",null,{"className":"text-5xl text-white text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 drop-shadow-md","children":"Rules"}],["$","img",null,{"src":"/GAPC-2024/assets/thumbnails/looking-at-papers.jpeg","alt":"Rules","className":"object-cover w-full h-full blur-sm"}]]}],["$","div",null,{"children":["$","div",null,{"className":"markdown-body","children":["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$8"}}]}]}]]
-6:["$","nav",null,{"className":"fixed top-0 h-20 w-screen mb-4 flex items-center justify-center z-10 bg-black bg-opacity-[50] bg-blend-soft-light shadow-sm shadow-blue-300 ","children":["$","div",null,{"className":"w-full max-w-4xl flex gap-4 items-center text-gray-100 max-lg:px-4 max-lg:max-w-full","children":[["$","$L9",null,{"className":"flex-1","href":"/","children":["$","div",null,{"className":"flex flex-col items-start gap-1","children":[["$","img",null,{"src":"/GAPC-2024/assets/logo.png","alt":"logo","className":"h-10"}],["$","span",null,{"className":"text-sm font-jbMono","children":"gapc 2024"}]]}]}],[["$","$L9","0",{"href":"/sponsors","className":"group py-6 transition duration-50 font-jbMono max-sm:hidden","children":["Sponsors",["$","span",null,{"className":"block mt-1 max-w-0 group-hover:max-w-full duration-200 h-0.5 bg-gradient-to-r from-purple-300 to-blue-300"}]]}],["$","$L9","1",{"href":"/location","className":"group py-6 transition duration-50 font-jbMono max-sm:hidden","children":["Location",["$","span",null,{"className":"block mt-1 max-w-0 group-hover:max-w-full duration-200 h-0.5 bg-gradient-to-r from-purple-300 to-blue-300"}]]}],["$","$L9","2",{"href":"/rules","className":"group py-6 transition duration-50 font-jbMono max-sm:hidden","children":["Rules",["$","span",null,{"className":"block mt-1 max-w-0 group-hover:max-w-full duration-200 h-0.5 bg-gradient-to-r from-purple-300 to-blue-300"}]]}],["$","$L9","3",{"href":"/register","className":"group py-6 transition duration-50 font-jbMono max-sm:hidden","children":["Register",["$","span",null,{"className":"block mt-1 max-w-0 group-hover:max-w-full duration-200 h-0.5 bg-gradient-to-r from-purple-300 to-blue-300"}]]}]],["$","$La",null,{"links":[{"name":"Sponsors","url":"/sponsors"},{"name":"Location","url":"/location"},{"name":"Rules","url":"/rules"},{"name":"Register","url":"/register"}]}]]}]}]
+6:["$","nav",null,{"className":"fixed top-0 h-20 w-screen mb-4 flex items-center justify-center z-10 bg-black bg-opacity-[50] bg-blend-soft-light shadow-sm shadow-blue-300 ","children":["$","div",null,{"className":"w-full max-w-4xl flex gap-4 items-center text-gray-100 max-lg:px-4 max-lg:max-w-full","children":[["$","$L9",null,{"className":"flex-1","href":"/","children":["$","div",null,{"className":"flex flex-col items-start gap-1","children":[["$","img",null,{"src":"/GAPC-2024/assets/logo.png","alt":"logo","className":"h-10"}],["$","span",null,{"className":"text-sm font-jbMono","children":"GAPC 2024"}]]}]}],[["$","$L9","0",{"href":"/register","className":"group py-6 transition duration-50 font-jbMono max-sm:hidden","children":["Register",["$","span",null,{"className":"block mt-1 max-w-0 group-hover:max-w-full duration-200 h-0.5 bg-gradient-to-r from-purple-300 to-blue-300"}]]}],["$","$L9","1",{"href":"/rules","className":"group py-6 transition duration-50 font-jbMono max-sm:hidden","children":["Rules",["$","span",null,{"className":"block mt-1 max-w-0 group-hover:max-w-full duration-200 h-0.5 bg-gradient-to-r from-purple-300 to-blue-300"}]]}],["$","$L9","2",{"href":"/location","className":"group py-6 transition duration-50 font-jbMono max-sm:hidden","children":["Location",["$","span",null,{"className":"block mt-1 max-w-0 group-hover:max-w-full duration-200 h-0.5 bg-gradient-to-r from-purple-300 to-blue-300"}]]}],["$","$L9","3",{"href":"/sponsors","className":"group py-6 transition duration-50 font-jbMono max-sm:hidden","children":["Sponsors",["$","span",null,{"className":"block mt-1 max-w-0 group-hover:max-w-full duration-200 h-0.5 bg-gradient-to-r from-purple-300 to-blue-300"}]]}],["$","$L9","4",{"href":"/schedule","className":"group py-6 transition duration-50 font-jbMono max-sm:hidden","children":["Schedule",["$","span",null,{"className":"block mt-1 max-w-0 group-hover:max-w-full duration-200 h-0.5 bg-gradient-to-r from-purple-300 to-blue-300"}]]}]],["$","$La",null,{"links":[{"name":"Register","url":"/register"},{"name":"Rules","url":"/rules"},{"name":"Location","url":"/location"},{"name":"Sponsors","url":"/sponsors"},{"name":"Schedule","url":"/schedule"}]}]]}]}]
 7:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"GAPC 2024"}],["$","meta","3",{"name":"description","content":"The 2024 edition of the Groningen Algorithmic Programming Competition"}],["$","meta","4",{"property":"og:title","content":"Groningen Algorithmic Programming Competition 2024"}],["$","meta","5",{"property":"og:description","content":"The 2024 edition of the Groningen Algorithmic Programming Competition"}],["$","meta","6",{"property":"og:url","content":"https://fully-connected-graph.github.io/GAPC-2024/"}],["$","meta","7",{"property":"og:locale","content":"en_US"}],["$","meta","8",{"property":"og:image","content":"https://fully-connected-graph.github.io/GAPC-2024/assets/thumbnails/banner.png"}],["$","meta","9",{"property":"og:type","content":"website"}],["$","meta","10",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","11",{"name":"twitter:title","content":"Groningen Algorithmic Programming Competition 2024"}],["$","meta","12",{"name":"twitter:description","content":"The 2024 edition of the Groningen Algorithmic Programming Competition"}],["$","meta","13",{"name":"twitter:image","content":"https://fully-connected-graph.github.io/GAPC-2024/assets/thumbnails/banner.png"}],["$","meta","14",{"name":"next-size-adjust"}]]
 1:null
