@@ -11,7 +11,8 @@ thumbnail: /GAPC-2024/assets/thumbnails/money.jpeg
     </div>
     <div className='p-2 md:h-24'>
     <br>
-       <p>There is also BetterBe but we don't have their logo yet.</p>
+    <div className='p-2 md:h-24'>
+        <img src="/GAPC-2024/assets/sponsors/better_be.svg" alt="Better Be" width="500" height="600">
     </div>
 </div>
 
