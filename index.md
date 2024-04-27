@@ -2,13 +2,13 @@
 
 The Groningen Algorithmic Programming Contest (GAPC) is a 4 hour competitive programming contest, where students from University of Groningen form teams of 2 to 3 people. The target is to solve the most problems and win the champion's cup.
 
-The event will take place on the Saturday 4th of May in the Bernoulliborg, from 10:30 - 20:00. This is a full-day event, where not only the lunch and dinner will be provided, but also you'll have the chance to interact with your fellow contestants and feel the ICPC-style event vibe. More details about the schedule can be found [here](/GAPC-2024/schedule/).
+The event will take place on the Saturday 4th of May in the Bernoulliborg, from 10:30 - 20:00. This is a full-day event, where not only the lunch and dinner will be provided, but also you'll have the chance to interact with your fellow contestants and feel the ICPC-style event vibe. More details about the schedule can be found [here](/schedule/).
 
 ## Contest
 
-This contest is open to all students from a university within the Benelux region. Before registering, please read the rules of the contest and these can be found [here](/GAPC-2024/rules/). To participate, each team will need to bring their own laptop.
+This contest is open to all students from a university within the Benelux region. Before registering, please read the rules of the contest and these can be found [here](/rules/). To participate, each team will need to bring their own laptop.
 
-To solve the problems, you will be able to use Java, Python, C, C++, Haskell and Kotlin. In the end, only the captain of the team needs to make the registration and it can be done [here](/GAPC-2024/register/).
+To solve the problems, you will be able to use Java, Python, C, C++, Haskell and Kotlin. In the end, only the captain of the team needs to make the registration and it can be done [here](/register/).
 
 ## Remember how it was last year?
 
@@ -18,7 +18,7 @@ photo album
 to see how it was last year!
 
 <a href="https://www.svcover.nl/photos/1522"  class="overflow-hidden">
-    <video src="/GAPC-2024/assets/gapc-2022-slideshow.mp4" autoplay muted loop class="h-60 m-auto"/>
+    <video src="/assets/gapc-2022-slideshow.mp4" autoplay muted loop class="h-60 m-auto"/>
 </a>
 
 <div>
@@ -30,7 +30,7 @@ to see how it was last year!
         <span class="text-3xl">
             Fully Connected Graph
         </span>
-        <img src="/GAPC-2024/assets/fcg.png" class="ml-4 h-10 inline-block"/>
+        <img src="/assets/fcg.png" class="ml-4 h-10 inline-block"/>
     </h1>
     <div class="flex flex-col lg:flex-row ">
         <div class="flex-1">
@@ -39,7 +39,7 @@ to see how it was last year!
             In the present, our main focus is on events about competitive programming and machine learning, but we expect to extend our range of events in the next academic year.
         </div>
         <div class="flex-1">
-            <img src="/GAPC-2024/assets/fcg-members.png"/>
+            <img src="/assets/fcg-members.png"/>
         </div>
     </div>
 </div>

@@ -1,6 +1,6 @@
 ---
 title: Schedule
-thumbnail: /GAPC-2024/assets/thumbnails/lecture.png
+thumbnail: /assets/thumbnails/lecture.png
 ---
 
 ## Contest schedule

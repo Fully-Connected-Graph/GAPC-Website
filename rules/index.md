@@ -1,6 +1,6 @@
 ---
 title: Rules
-thumbnail: /GAPC-2024/assets/thumbnails/looking-at-papers.jpeg
+thumbnail: /assets/thumbnails/looking-at-papers.jpeg
 ---
 
 ## Rules
@@ -9,7 +9,7 @@ thumbnail: /GAPC-2024/assets/thumbnails/looking-at-papers.jpeg
 
 - GAPC: The Groningen Algorithm Programming Contest 2024
 - Organisation: The event is organised by the members of Fully Connected Graph
-- Website: The website is maintained by the organisation and available at <a href="https://fully-connected-graph.github.io/GAPC-2024/" target="_blank">here</a>.
+- Website: The website is maintained by the organisation and available at <a href="https://gapc.svcover.nl/" target="_blank">here</a>.
 - Discord: The GAPC discord is the FCG discord <a href="https://discord.com/invite/JfzxyBHPsH" target="_blank">FCG Discord</a>.
 - Jury: The group responsible for creating the problem set and checking the solutions submitted by the participants.
 - Technical staff: The group of people responsible for the system (the digital environment, jury system, printing, etc.).
