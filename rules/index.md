@@ -8,7 +8,7 @@ thumbnail: /assets/thumbnails/looking-at-papers.jpeg
 ### Definitions
 
 - GAPC: The Groningen Algorithm Programming Contest 2024
-- Organisation: The event is organised by the members of Fully Connected Graph
+- Organisation: The event is organised by the members and friends of Fully Connected Graph
 - Website: The website is maintained by the organisation and available at <a href="https://gapc.svcover.nl/" target="_blank">here</a>.
 - Discord: The GAPC discord is the FCG discord <a href="https://discord.com/invite/JfzxyBHPsH" target="_blank">FCG Discord</a>.
 - Jury: The group responsible for creating the problem set and checking the solutions submitted by the participants.
@@ -25,7 +25,9 @@ For any questions related to the contest, please contact the organiser either by
 
 ### Introduction
 
-- Participation is recommended to be done in teams of 2 or 3 persons.
+- Participation is made in teams of 2 or 3 persons.
+- The team captain is the only one who needs to register the team.
+- You can register alone and then be added to a random team.
 
 ### Teams
 
@@ -48,19 +50,25 @@ There will be 1 or more people that will capture digital content (photo, video e
 - The contest lasts for 4 hours.
 - From the beginning until one hour before the end of the GAPC, the scores are displayed.
 - A team is allowed a dictionary from English to their native language. The dictionary should have no notes written in them.
+- A team is allowed to bring up to 25 A4-sized pages, printed one-sided or up to 12.5 A4-sized pages, printed two-sided, of documentation. Each team member is allowed one identical copy.
+- A team is allowed to bring one non-programmable wired mouse and/or keyboard. The keyboard needs to be checked by the organisation before the testing session.
+- The TCR, dictionary, and documentation will be given to the jury for checking during the registration session.
 
 ### Problems
 
 - At least six problems will be posted. The jury intends to develop problems with minimal dependence on detailed knowledge of a particular application area or a particular contest language.
 - A contestant may submit a claim of ambiguity or error for a problem statement by submitting a clarification request to a judge. If the judges agree that an ambiguity or error exists, a clarification will be issued to all contestants.
 - The jury has the right to change or withdraw problems during the contest before informing all teams.
-
-## System
-
 - A solution for a problem has to be written in C99, C++ (version 14 or later will be available), Python (versions 3 will be available), Java (version 11 or later) or Haskell (ghc version 9.0.2), unless problem statement explicitly states otherwise.
+
+# System
+
 - A team is disqualified if they submit a harmful code that disrupts the contest.
 - A submission can use the standard library of the language, which means that libraries such as "numpy" are not available.
-- More details about the system will be given in due time.
+
+## Contest machine
+
+- The contest machine is provided by the organisers, which will be a laptop.
 
 ## Judgement
 
@@ -102,7 +110,3 @@ There will be 1 or more people that will capture digital content (photo, video e
 - The organisation has the right to stop the contest, extend the contest time, temporarily block submissions for all teams, or change the scores in exceptional conditions.
 - In situations where no rule applies, or there is ambiguity about the rules, the organisation decides the outcome.
 - If necessary, the organisation can make changes and exceptions to these rules.
-
-## Contest machine
-
-More details to be announced in due time.
