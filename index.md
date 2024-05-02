@@ -1,12 +1,12 @@
 ## About
 
-The Groningen Algorithmic Programming Contest (GAPC) is a 4 hour competitive programming contest, where students from University of Groningen form teams of 2 to 3 people. The target is to solve the most problems and win the champion's cup.
+The Groningen Algorithmic Programming Contest (GAPC) is a 4 hour competitive programming contest, where students from University of Groningen form teams of 1 to 3 people. The target is to solve the most problems and win the champion's cup.
 
 The event will take place on the Saturday 4th of May in the Bernoulliborg, from 9:30 - 20:00. This is a full-day event, where not only the lunch, dinner and snacks will be provided, but also you'll have the chance to interact with your fellow contestants and feel the ICPC-style event vibe. More details about the schedule can be found [here](/schedule/).
 
 ## Contest
 
-This contest is open to all students from the University of Groningen. The contest machine will be a laptop provided by the organisers. Moreover, the teams are allowed to bring a Team Contest Reference (TCR), one non-programmable wired mouse and/or keyboard. These will be given to be checked by the jury in the registration session(9:30-10:30). More details about the rules can be found [here](/rules/).
+This contest is open to all students from the University of Groningen. The contest machine will be a laptop provided by the organisers. Moreover, the teams are allowed to bring a Team Contest Reference (TCR), one non-programmable wired mouse and/or keyboard. These will be given to be checked by the jury in the registration session (9:30-10:30). More details about the rules can be found [here](/rules/).
 
 To solve the problems, you will be able to use Java, Python, C and C++. In the end, only the captain of the team needs to make the registration and it can be done [here](/register/).
 

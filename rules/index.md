@@ -25,7 +25,7 @@ For any questions related to the contest, please contact the organiser either by
 
 ### Introduction
 
-- Participation is made in teams of 2 or 3 persons.
+- Participation is made in teams of 1, 2 or 3 persons.
 - The team captain is the only one who needs to register the team.
 - You can register alone and then be added to a random team.
 
@@ -50,16 +50,16 @@ There will be 1 or more people that will capture digital content (photo, video e
 - The contest lasts for 4 hours.
 - From the beginning until one hour before the end of the GAPC, the scores are displayed.
 - A team is allowed a dictionary from English to their native language. The dictionary should have no notes written in them.
-- A team is allowed to bring up to 25 A4-sized pages, printed one-sided or up to 12.5 A4-sized pages, printed two-sided, of documentation. Each team member is allowed one identical copy.
-- A team is allowed to bring one non-programmable wired mouse and/or keyboard. The keyboard needs to be checked by the organisation before the testing session.
-- The TCR, dictionary, and documentation will be given to the jury for checking during the registration session.
+- A team is allowed to bring up to 25 A4-sized pages, printed one-sided or up to 12.5 A4-sized pages, printed two-sided, of documentation. Each team member is allowed one identical copy. Text and illustrations must be readable by a person with correctable eyesight without magnification from a distance of ½ meter. It may include handwritten comments and corrections on the fronts of pages only. The team name must be written on the front page.
+- A team is allowed to bring one non-programmable wired mouse and/or keyboard. The keyboard and/or mouse needs to be handed-in during the Teams check-in session, to be checked by the jury.
+- The TCR and/or dictionary needs to be handed-in during the Teams check-in session, to be checked by the jury.
 
 ### Problems
 
 - At least six problems will be posted. The jury intends to develop problems with minimal dependence on detailed knowledge of a particular application area or a particular contest language.
 - A contestant may submit a claim of ambiguity or error for a problem statement by submitting a clarification request to a judge. If the judges agree that an ambiguity or error exists, a clarification will be issued to all contestants.
 - The jury has the right to change or withdraw problems during the contest before informing all teams.
-- A solution for a problem has to be written in C99, C++ (version 14 or later will be available), Python (versions 3 will be available), Java (version 11 or later) or Haskell (ghc version 9.0.2), unless problem statement explicitly states otherwise.
+- A solution for a problem has to be written in C99, C++ (version 14 or later will be available), Python (versions 3 will be available), Java (version 11 or later), unless problem statement explicitly states otherwise.
 
 # System
 
@@ -68,7 +68,134 @@ There will be 1 or more people that will capture digital content (photo, video e
 
 ## Contest machine
 
-- The contest machine is provided by the organisers, which will be a laptop.
+- The contest machine is provided by the organisers and it will be a HP 450 G8 laptop (Intel Core i5-1135G7 Processor, 4 cores (HT disabled), 2.4 GHz, turbo disabled, 8GB RAM)
+
+## Software
+
+### OS
+
+- Ubuntu 22.04 LTS
+
+### Desktop
+
+- GNOME
+
+### Editors
+
+- vim
+- gvim
+- nano
+- neovim
+- emacs
+- gedit
+- geany
+- kate
+
+### IDEs
+
+o IntelliJ IDEA Community
+
+- Version: 2023.3.2
+- Workspace is set up
+- Plugins:
+  - IdeaVim
+
+o CLion
+
+- Version: 2023.3.2
+- Workspace is set up
+- Plugins:
+  - IdeaVim
+
+o PyCharm Community
+
+- Version: 2023.3.2
+- Workspace is set up
+- Plugins:
+  - IdeaVim
+
+o Visual Studio Code
+
+- Version: 1.88.1
+- Plugins:
+  - C/C++ - Microsoft
+  - C# - Microsoft
+  - Code Runner - Jun Han
+  - Debugger for Java - Microsoft
+  - ESLint - Dirk Baeumer
+  - Language Support for Java - Red Hat
+  - Pylance - Microsoft
+  - Python - Microsoft
+  - Python Debugger - Microsoft
+  - TSLint - Microsoft
+
+o Code::Blocks
+
+- Version: 20.03
+
+## Languages
+
+The following languages are allowed during the contest:
+
+o C
+
+- Compiler version: 11.4.0
+- Standard: gnu17
+
+o C++
+
+- Compiler version: 11.4.0
+- Standard: gnu++20
+
+o Python
+
+- Version: PyPy 7.3.9 (Python 3.8.13)
+
+o Java
+
+- Version: 11.0.22
+
+## Compilation of Submissions
+
+During the contest, teams will submit proposed solutions to the contest problems to the Judges using the DOMjudge contest control system (version 8.1). This can be done through the web interface, or using the submit client. Source files submitted to the Judges will be compiled using the following command line arguments for the respective language:
+
+o C:
+
+- gcc -std=gnu17 -x c -Wall -O2 -static -pipe -o $1 "$1.c" -lm
+
+o C++:
+
+- g++ -std=gnu++20 -x c++ -Wall -O2 -static -pipe -o $1 "$1.cpp" -lm
+
+o Python 3:
+
+- pypy3 $@
+
+o Java:
+
+- javac -encoding UTF-8 -sourcepath . -d . $@
+
+## Execution of Submissions
+
+- For each language, if the above compilation step is successful then the submission will be executed as follows:
+- For C/C++: the executable file generated by the compiler will be executed to generate the output of the submission.
+- For Python 3: the main source file will be executed by the PyPy3 Python3 interpreter to generate the output of the submission.
+- For Java: the compiled main class will be executed using the following command:
+  java -Dfile.encoding=UTF-8 -XX:+UseSerialGC -Xss65536k -Xms1966080k -Xmx1966080k $@
+
+Compilation and execution as described above will take place in a “sandbox” on a dedicated judging machine. The judging machine will be identical to the machines used by teams (see Hardware).
+
+The sandbox will allocate 2 GiB of memory; the entire program, including its runtime environment, must execute within this memory limit. For interpreted languages (Python, Java, and Kotlin) the runtime environment includes the interpreter (that is, the PyPy3 interpreter for Python and the JVM for Java/Kotlin). The sandbox memory allocation size will be the same for all languages and all contest problems. For Java and Kotlin, the above commands show the stack size and heap size settings that will be used when the program is run in the sandbox.
+
+## Documentation / Specification / Reference material
+
+The following reference materials will be available on the teams’ workstations through the browser:
+
+- C reference from cppreference.com
+- C++ reference from cppreference.com
+- Python 3.8.13 documentation
+- Java® Platform, Standard Edition & Java Development Kit Version 17 API Specification
+- DOMjudge Team Manual (As PDF)
 
 ## Judgement
 
