@@ -1,22 +1,22 @@
 [
-  {
-    "name": "Register",
-    "url": "/register"
-  },
-  {
-    "name": "Rules",
-    "url": "/rules"
-  },
-  {
-    "name": "Location",
-    "url": "/location"
-  },
-  {
-    "name": "Sponsors",
-    "url": "/sponsors"
-  },
-  {
-    "name": "Schedule",
-    "url": "/schedule"
-  }
+    {
+        "name": "SL map",
+        "url": "/sl-map"
+    },
+    {
+        "name": "Rules",
+        "url": "/rules"
+    },
+    {
+        "name": "Location",
+        "url": "/location"
+    },
+    {
+        "name": "Sponsors",
+        "url": "/sponsors"
+    },
+    {
+        "name": "Schedule",
+        "url": "/schedule"
+    }
 ]
