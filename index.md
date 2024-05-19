@@ -4,8 +4,8 @@
 
 Thank you for participating! We hope you had a great time and enjoyed the problems. We hope to see you next year!
 - [Final standings](/final_standings/index.html)
-- [Problem set](/assets/problems/contest.en.zip)
-- [Solutions](/assets/problems/solutions.en.zip)
+- [Problem set](/assets/problems/contest.en.pdf)
+- [Solutions](/assets/problems/solutions.en.pdf)
 - [Test cases](/assets/problems/fpc2024.zip)
 - [Photos](https://drive.google.com/drive/folders/1ZYXBB9Qs-2c2M-RZtt8wVSggmoBBlPVA?usp=sharing) (only RuG students can access)
 
