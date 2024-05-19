@@ -1,3 +1,14 @@
+<div id="read-more" class="text-center text-2xl font-semibold my-12">
+    The contest is over!
+</div>
+
+Thank you for participating! We hope you had a great time and enjoyed the problems. We hope to see you next year!
+- [Final standings](/final_standings/index.html)
+- [Problem set](/assets/problems/contest.en.zip)
+- [Solutions](/assets/problems/solutions.en.zip)
+- [Test cases](/assets/problems/fpc2024.zip)
+- [Photos](https://drive.google.com/drive/folders/1ZYXBB9Qs-2c2M-RZtt8wVSggmoBBlPVA?usp=sharing) (only RuG students can access)
+
 ## About
 
 The Groningen Algorithmic Programming Contest (GAPC) is a 4 hour competitive programming contest, where students from University of Groningen form teams of 1 to 3 people. The target is to solve the most problems and win the champion's cup.
