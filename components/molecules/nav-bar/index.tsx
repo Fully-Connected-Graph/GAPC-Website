@@ -20,7 +20,7 @@ export const NavBar: FC = async () => {
         <Link className="flex-1" href="/">
           <div className="flex flex-col items-start gap-1">
             <img src="/assets/logo.png" alt="logo" className="h-10" />
-            <span className="text-sm font-jbMono">GAPC 2024</span>
+            <span className="text-sm font-jbMono">GAPC 2025</span>
           </div>
         </Link>
         {links.map((link, index) => (
