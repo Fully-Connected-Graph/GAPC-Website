@@ -7,7 +7,7 @@ thumbnail: /assets/thumbnails/looking-at-papers.jpeg
 
 ### Definitions
 
-- GAPC: The Groningen Algorithm Programming Contest 2024
+- GAPC: The Groningen Algorithm Programming Contest 2025
 - Organisation: The event is organised by the members and friends of Fully Connected Graph
 - Website: The website is maintained by the organisation and available at <a href="https://gapc.svcover.nl/" target="_blank">here</a>.
 - Discord: The GAPC discord is the FCG discord <a href="https://discord.com/invite/JfzxyBHPsH" target="_blank">FCG Discord</a>.
@@ -36,7 +36,7 @@ This is an open contest to all students within Groningen region.
 All the teams:
 
 - Participate for free.
-- Participate in the teams' pool for the title “Winner of the Groningen Algorithm Programming Contest 2024”.
+- Participate in the teams' pool for the title “Winner of the Groningen Algorithm Programming Contest 2025”.
 
 ### Photos and videos
 
@@ -68,7 +68,7 @@ There will be 1 or more people that will capture digital content (photo, video e
 
 ## Contest machine
 
-- The contest machine is provided by the organisers and it will be a HP 450 G8 laptop (Intel Core i5-1135G7 Processor, 4 cores (HT disabled), 2.4 GHz, turbo disabled, 8GB RAM)
+- The contest machine is provided by the organisers and it will be a HP 450 G8 laptop (Intel Core i5-1135G7 Processor, 4 cores (HT disabled), 2.4 GHz, turbo disabled, 8GB RAM) (subject to change).
 
 ## Software
 
