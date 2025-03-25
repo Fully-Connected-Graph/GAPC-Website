@@ -25,8 +25,11 @@ jobs:
         run: npm run build
       - name: Add .nojekyll file
         run: touch ./out/.nojekyll
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.1
+      - name: Deploy to SFTP
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-          branch: gh-pages
-          folder: out
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./out/
+          server-dir: /www/
