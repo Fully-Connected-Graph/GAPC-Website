@@ -1,0 +1,71 @@
+name: Deploy to Github Pages and SFTP
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 19
+
+      - name: Install packages
+        run: npm ci
+
+      - name: Make build
+        run: npm run build
+
+      - name: Add .nojekyll file
+        run: touch ./out/.nojekyll
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: gh-pages
+          folder: out
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build # Ensure this runs after the 'build' job
+    environment: production
+
+    steps:
+      # Checkout the gh-pages branch
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v3
+        with:
+          ref: gh-pages # Check out the gh-pages branch
+
+      - name: Install lftp client
+        run: sudo apt-get install -y lftp
+
+      - name: Add remote host to known hosts
+        env:
+          SFTP_HOST: ${{ secrets.SFTP_HOST }}
+          SFTP_PORT: ${{ secrets.SFTP_PORT }}
+        run: |
+          # Ensure .ssh directory exists
+          mkdir -p ~/.ssh
+
+          # Automatically add the SFTP server host key to known_hosts
+          ssh-keyscan -p $SFTP_PORT $SFTP_HOST >> ~/.ssh/known_hosts
+
+      - name: Deploy via SFTP using password
+        env:
+          SFTP_HOST: ${{ secrets.SFTP_HOST }}
+          SFTP_PORT: ${{ secrets.SFTP_PORT }}
+          SFTP_USER: ${{ secrets.SFTP_USER }}
+          SFTP_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
+          REMOTE_DIR: ${{ secrets.REMOTE_DIR }}
+        run: |
+          # Upload files using lftp from the current directory
+          lftp -e "mirror -R . $REMOTE_DIR; exit" -u $SFTP_USER,$SFTP_PASSWORD -p $SFTP_PORT sftp://$SFTP_HOST
