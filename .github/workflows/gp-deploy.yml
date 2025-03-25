@@ -32,5 +32,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           server: ${{ secrets.FTP_SERVER }}
           local_path: "./out/"
-          remote_path: "/www/"
+          remote_path: "/phoenix-storage/srv/fcg/gapc"
           sftpArgs: "-o ConnectTimeout=5"
