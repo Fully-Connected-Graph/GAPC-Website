@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -22,7 +24,7 @@ const AboutUs = () => {
           <span className="text-red-500 mx-2">❤️</span>
           by
           <a
-            href="#fcg"
+            href="https://www.svcover.nl/committees/programming_committee"
             className="underline decoration-dotted underline-offset-4 ml-2"
           >
             FCG
@@ -32,11 +34,15 @@ const AboutUs = () => {
           GAPC is a programming contest held in Groningen. Teams will have 4
           hours to solve algorithmic problems and compete for the grand prize.
         </span>
-        <Link href="#read-more">
-          <Button variant="outline" className="text-black">
-            Read more
-          </Button>
-        </Link>
+        <Button
+          variant="outline"
+          className="text-white text-3xl p-10 bg-blue-600 border-blue-600"
+          onClick={() =>
+            window.open("https://forms.gle/2Tkt3FKqA5Mbe6tr6", "_blank")
+          }
+        >
+          Sign up now!
+        </Button>
       </div>
     </div>
   );

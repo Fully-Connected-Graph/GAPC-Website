@@ -1,3 +1,4 @@
+import { MemberList } from "@/components/molecules/member-list";
 import AboutUs from "@/components/templates/about-us";
 import { create, walk } from "@/lib/server_utils";
 import { notFound } from "next/navigation";
@@ -33,6 +34,11 @@ const Page = async ({ params }: { params: { slug: string[] } }) => {
           <article dangerouslySetInnerHTML={{ __html: markdown }} />
         </div>
       </div>
+      {!params.slug && (
+        <div className="mb-8">
+          <MemberList />
+        </div>
+      )}
     </>
   );
 };
