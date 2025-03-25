@@ -25,11 +25,12 @@ jobs:
         run: npm run build
       - name: Add .nojekyll file
         run: touch ./out/.nojekyll
-      - name: Deploy to SFTP
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      - name: Deploy to Server
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.5
         with:
-          server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./out/
-          server-dir: /www/
+          server: ${{ secrets.FTP_SERVER }}
+          local_path: "./out/"
+          remote_path: "/www/"
+          sftpArgs: "-o ConnectTimeout=5"
