@@ -17,7 +17,7 @@ const AboutUs = () => {
         />
         <span className="text-white text-center block font-jbMono text-9xl max-sm:text-5xl backdrop-blur-sm">
           GAPC
-          <span className="text-[#4686ff]"> 2025</span>
+          <span className="text-[#DE8EAF]"> 2025</span>
         </span>
         <span className="text-white text-center block font-jbMono text-lg backdrop-blur-sm">
           Made with
@@ -36,7 +36,7 @@ const AboutUs = () => {
         </span>
         <Button
           variant="outline"
-          className="text-white text-3xl p-10 bg-blue-600 border-blue-600"
+          className="text-white text-3xl p-10 bg-pink-600 border-pink-600"
           onClick={() =>
             window.open("https://forms.gle/2Tkt3FKqA5Mbe6tr6", "_blank")
           }

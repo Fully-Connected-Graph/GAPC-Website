@@ -43,7 +43,7 @@ export const MemberList: FC = async () => {
         If you have any questions, please send us an email at{" "}
         <a
           href="mailto:programming_committee@svcover.nl"
-          className="text-blue-500 underline"
+          className="text-pink-500 underline"
         >
           programming_committee@svcover.nl
         </a>
@@ -51,7 +51,7 @@ export const MemberList: FC = async () => {
         answer quicker you can also join the{" "}
         <a
           href="https://discord.com/invite/JfzxyBHPsH"
-          className="text-blue-500 underline"
+          className="text-pink-500 underline"
         >
           FCG Discord
         </a>
