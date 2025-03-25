@@ -25,7 +25,7 @@ For any questions related to the contest, please contact the organiser either by
 
 ### Introduction
 
-- Participation is made in teams of 1, 2 or 3 persons.
+- Participation is made in teams of 1, 2 or 3 people.
 - The team captain is the only one who needs to register the team.
 - You can register alone and then be added to a random team.
 
