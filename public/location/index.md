@@ -5,7 +5,7 @@ thumbnail: /assets/thumbnails/contest.jpeg
 
 ## Location
 
-The GAPC 2025 will be held at the University of Groningen, Netherlands. The event will happen in the Bernoulliborg building on the Zernike campus. The presenations will happen in BB 5161.0151.
+The GAPC 2025 will be held at the University of Groningen, Netherlands. The event will happen in the Bernoulliborg building on the Zernike campus. The presentation will happen in BB 5161.0151.
 
 ```
 Bernoulliborg
