@@ -1,6 +1,7 @@
 import { MemberList } from "@/components/molecules/member-list";
 import AboutUs from "@/components/templates/about-us";
 import { create, walk } from "@/lib/server_utils";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 
 const Page = async ({ params }: { params: { slug: string[] } }) => {
@@ -22,7 +23,7 @@ const Page = async ({ params }: { params: { slug: string[] } }) => {
           <h1 className="text-5xl text-white text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 drop-shadow-md">
             {data.title}
           </h1>
-          <img
+          <Image
             src={data.thumbnail}
             alt={data.title}
             className="object-cover w-full h-full blur-sm"

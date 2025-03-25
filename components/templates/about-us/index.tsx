@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import Image from "next/image";
 
 const AboutUs = () => {
   return (
@@ -10,7 +10,7 @@ const AboutUs = () => {
         className="h-[calc(100vh-5rem)] bg-swirl bg-no-repeat flex flex-col gap-8 justify-center items-center text-white"
         style={{ backgroundSize: "cover" }}
       >
-        <img
+        <Image
           src="/assets/logo.png"
           alt="About Us"
           className="w-80 object-contain max-sm:w-60"

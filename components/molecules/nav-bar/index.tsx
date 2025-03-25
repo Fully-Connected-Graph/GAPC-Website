@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FC, useState } from "react";
 import MobileMenu from "./mobile-menu";
 import { MenuIcon } from "lucide-react";
+import Image from "next/image";
 
 export const NavBar: FC = async () => {
   async function create() {
@@ -19,7 +20,7 @@ export const NavBar: FC = async () => {
       <div className="w-full max-w-4xl flex gap-4 items-center text-gray-100 max-lg:px-4 max-lg:max-w-full">
         <Link className="flex-1" href="/">
           <div className="flex flex-col items-start gap-1">
-            <img src="/assets/logo.png" alt="logo" className="h-10" />
+            <Image src="/assets/logo.png" alt="logo" className="h-10" />
             <span className="text-sm font-jbMono">GAPC 2025</span>
           </div>
         </Link>

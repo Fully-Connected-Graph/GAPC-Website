@@ -5,6 +5,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Calendar } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
 
@@ -17,7 +18,7 @@ const PreviewCardBlog: FC<PreviewCardBlogProps> = ({ post }) => {
     <Link href={`/${post.link.join("/")}`}>
       <Card className="h-72 cursor-pointer bg-white duration-100 hover:shadow-md">
         <div className="z-10 rounded-t-lg overflow-clip h-20 max-lg:h-24 max-sm:h-20">
-          <img
+          <Image
             src={post.thumbnail || "/assets/placeholder.png"}
             alt={post.title}
             width={500}

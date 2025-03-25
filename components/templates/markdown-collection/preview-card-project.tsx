@@ -10,6 +10,7 @@ import Link from "next/link";
 import { FC } from "react";
 import ProjectDate from "./project-date";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 interface PreviewCardProjectProps {
   post: { [key: string]: any };
@@ -20,7 +21,7 @@ const PreviewCardProject: FC<PreviewCardProjectProps> = ({ post }) => {
     <Card className="h-72 bg-white duration-100 hover:shadow-md">
       <Link href={`/${post.link.join("/")}`} className=" cursor-pointer">
         <div className="z-10 rounded-t-lg overflow-clip h-20 max-lg:h-24 max-sm:h-20">
-          <img
+          <Image
             src={post.thumbnail || "/assets/placeholder.png"}
             alt={post.title}
             width={500}

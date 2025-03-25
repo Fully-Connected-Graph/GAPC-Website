@@ -1,4 +1,5 @@
 import { readFileSync } from "fs";
+import Image from "next/image";
 import { FC } from "react";
 
 export const MemberList: FC = async () => {
@@ -24,7 +25,7 @@ export const MemberList: FC = async () => {
         <div className="grid grid-cols-4 gap-1 max-lg:grid-cols-2 max-sm:grid-cols-1">
           {members.map((member, i) => (
             <div key={i} className="bg-white rounded-lg p-4">
-              <img
+              <Image
                 src={member.img}
                 alt={member.name}
                 className="w-24 h-24 rounded-full mx-auto"
@@ -46,15 +47,15 @@ export const MemberList: FC = async () => {
         >
           programming_committee@svcover.nl
         </a>
-        ! If you're looking for more teammates, or would like to get an answer
-        quicker you can also join the{" "}
+        ! If you&rsquo;re looking for more teammates, or would like to get an
+        answer quicker you can also join the{" "}
         <a
           href="https://discord.com/invite/JfzxyBHPsH"
           className="text-blue-500 underline"
         >
           FCG Discord
         </a>
-        ! There's always passionate people looking to help you out!
+        ! There&rsquo;s always passionate people looking to help you out!
       </div>
     </>
   );
