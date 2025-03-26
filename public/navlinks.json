@@ -22,5 +22,9 @@
   {
     "name": "Archive",
     "url": "/archive"
+  },
+  {
+    "name": "Help us out",
+    "url": "/volunteer"
   }
 ]
