@@ -68,7 +68,7 @@ There will be 1 or more people that will capture digital content (photo, video e
 
 ## Contest machine
 
-- The contest machine is provided by the organisers and it will be a HP 450 G8 laptop (Intel Core i5-1135G7 Processor, 4 cores (HT disabled), 2.4 GHz, turbo disabled, 8GB RAM) (subject to change).
+- The contest machine is provided by the organisers and it will be a HP 450 G9 laptop (Intel Core i5-1235U Processor, 10 cores (HT disabled), 4.4 GHz, turbo disabled, 8GB RAM) (subject to change).
 
 ## Software
 
