@@ -2,11 +2,11 @@
 
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { useState } from "react";
-import Typewriter from "typewriter-effect";
+// import { useState } from "react";
+// import Typewriter from "typewriter-effect";
 
 const AboutUs = () => {
-  const [newYear, setNewYear] = useState(false);
+  const newYear = true;
 
   // A consistent duration for all "new year" animations (in milliseconds)
   const animationDuration = 3000;
@@ -60,40 +60,47 @@ const AboutUs = () => {
           </div>
 
           <span className="text-white text-center block font-jbMono text-9xl max-sm:text-5xl backdrop-blur-sm">
-            <Typewriter
-              onInit={(typewriter) => {
-                typewriter
-                  .callFunction(({ elements: { cursor } }) => {
-                    cursor.style.display = "inline-block";
-                  })
-                  .changeDelay(70)
-                  .changeDeleteSpeed(70)
-                  .typeString("GAPC ")
-                  .typeString(
-                    "<span class='text-[var(--gapc-color)]'>2025</span>",
-                  )
-                  .pauseFor(2000)
-                  .deleteChars(4)
-                  .typeString(
-                    "<span class='text-[var(--gapc-color-new)]'>2026</span>",
-                  )
-                  .pauseFor(200)
-                  .callFunction(({ elements: { cursor } }) => {
-                    cursor.style.animation = "none";
-                    cursor.style.transition = "opacity 2s ease-out";
-                    cursor.style.opacity = "0";
+            <span>
+              GAPC <span className="text-[var(--gapc-color-new)]">2026</span>
+            </span>
 
-                    setTimeout(() => {
-                      cursor.style.display = "none";
-                    }, 300);
-                  })
-                  .callFunction(() => {
-                    // This now triggers all synchronized animations
-                    setNewYear(true);
-                  })
-                  .start();
-              }}
-            />
+            {false && (
+              <>
+                {/* <Typewriter
+                  onInit={(typewriter) => {
+                    typewriter
+                      .callFunction(({ elements: { cursor } }) => {
+                        cursor.style.display = "inline-block";
+                      })
+                      .changeDelay(70)
+                      .changeDeleteSpeed(70)
+                      .typeString("GAPC ")
+                      .typeString(
+                        "<span class='text-[var(--gapc-color)]'>2025</span>",
+                      )
+                      .pauseFor(2000)
+                      .deleteChars(4)
+                      .typeString(
+                        "<span class='text-[var(--gapc-color-new)]'>2026</span>",
+                      )
+                      .pauseFor(200)
+                      .callFunction(({ elements: { cursor } }) => {
+                        cursor.style.animation = "none";
+                        cursor.style.transition = "opacity 2s ease-out";
+                        cursor.style.opacity = "0";
+
+                        setTimeout(() => {
+                          cursor.style.display = "none";
+                        }, 300);
+                      })
+                      .callFunction(() => {
+                        setNewYear(true);
+                      })
+                      .start();
+                  }}
+                /> */}
+              </>
+            )}
           </span>
 
           {/* Footer text remains the same */}
@@ -122,9 +129,11 @@ const AboutUs = () => {
                 : "bg-[var(--gapc-color-dark)] border-[var(--gapc-color-dark)]"
             }`}
             style={{ transitionDuration: `${animationDuration}ms` }}
-            onClick={() => window.open("/archive", "_blank")}
+            onClick={() =>
+              window.open("https://forms.gle/jqihByqDhu2njCc97", "_blank")
+            }
           >
-            We are gearing up for the next edition!
+            Sign up!
           </Button>
         </div>
       </div>
