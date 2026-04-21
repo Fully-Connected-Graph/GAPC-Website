@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: "The programming competition organized in Groningen!",
     siteName: "GAPC 2026",
     images: [
-      "https://filemanager.svcover.nl/images/resize?f=uploads%2Fprogramming_committee%2FGAPC%2FGAPC+Cover+Banner.png&w=1000",
+      "https://gapc.svcover.nl/assets/thumbnails/banner.png",
     ],
     emails: ["programming_committee@svcover.nl"],
     countryName: "The Netherlands",
