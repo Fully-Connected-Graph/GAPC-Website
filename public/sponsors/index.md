@@ -11,6 +11,10 @@ thumbnail: /assets/thumbnails/money.jpeg
         <img src="/assets/sponsors/researchable.png" alt="Researchabe logo" width="600" height="auto">
         </a>
     </div>
+    <div className='p-2 md:h-24'>
+        <a href="https://nebius.com">
+        <img src="/assets/sponsors/nebius.png" alt="Nebius logo" width="600" height="auto">
+    </div>
 </div>
 
 <br>
