@@ -125,11 +125,8 @@ body {
 }
 
 :root {
-  --gapc-color: #de8eaf;
-  --gapc-color-dark: #b7356b;
-
-  --gapc-color-new: #89f336;
-  --gapc-color-new-dark: #5f9b1a;
+  --gapc-color: #89f336;
+  --gapc-color-dark: #5f9b1a;
 }
 
 @keyframes fadeIn {
