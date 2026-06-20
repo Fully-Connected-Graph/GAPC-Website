@@ -27,7 +27,7 @@ export const NavBar: FC = async () => {
               width={70}
               height={40}
             />
-            <span className="text-sm font-jbMono">GAPC 2026</span>
+            <span className="text-sm font-jbMono">GAPC 2027</span>
           </div>
         </Link>
         {links.map((link, index) => (

@@ -5,7 +5,7 @@ thumbnail: /assets/thumbnails/lecture.png
 
 ## Contest schedule
 
-The event will take place on Saturday, 25th of April 2026
+The event will take place on TBA
 
 All time is relative to Groningen, Netherlands (GMT+2)
 
@@ -19,6 +19,5 @@ All time is relative to Groningen, Netherlands (GMT+2)
 | 12:20 | 13:00 | Teams have access to the contest site |
 | 13:00 | 17:00 | Contest (scoreboard frozen at 16:00)  |
 | 17:15 | 17:40 | Solutions presentation                |
-| 17:40 | 18:00 | Nebius Presentation                   |
-| 18:00 | 18:20 | Award ceremony                        |
-| 18:20 | 20:00 | Pizza and Networking                  |
+| 17:40 | 18:00 | Award ceremony                        |
+| 18:00 | 20:00 | Pizza and Networking                  |

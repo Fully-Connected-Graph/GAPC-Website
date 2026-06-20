@@ -9,19 +9,17 @@ import { NavBar } from "@/components/molecules/nav-bar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "GAPC 2026",
+  title: "GAPC 2027",
   description: "The programming competition organized in Groningen!",
-  applicationName: "gapc2026website",
+  applicationName: "gapc2027website",
   openGraph: {
     type: "article",
     locale: "en_US",
     url: "https://gapc.svcover.nl/",
-    title: "Groningen Algorithmic Programming Competition 2026",
+    title: "Groningen Algorithmic Programming Competition 2027",
     description: "The programming competition organized in Groningen!",
-    siteName: "GAPC 2026",
-    images: [
-      "https://gapc.svcover.nl/assets/thumbnails/banner.png",
-    ],
+    siteName: "GAPC 2027",
+    images: ["https://gapc.svcover.nl/assets/thumbnails/banner.png"],
     emails: ["programming_committee@svcover.nl"],
     countryName: "The Netherlands",
   },
@@ -40,13 +38,13 @@ export default function RootLayout({
       <Head>
         <link rel="icon" type="image/png" href="/favicon.ico" />
 
-        <meta name="og:site_name" content="GAPC 2026" />
+        <meta name="og:site_name" content="GAPC 2027" />
         <meta
           name="og:description"
           content="The programming competition organized in Groningen!"
         />
 
-        <meta name="application-name" content="gapc2026website" />
+        <meta name="application-name" content="gapc2027website" />
         <meta name="og:email" content="programming_committee@svcover.nl" />
 
         <meta name="og:latitude" content="53.2403955" />
