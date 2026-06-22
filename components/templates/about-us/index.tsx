@@ -18,16 +18,41 @@ const AboutUs = () => {
         <div
           className="absolute inset-0 bg-swirl-new bg-no-repeat bg-cover"
           aria-hidden="true"
+          style={{
+            filter: newYear ? "grayscale(1) brightness(1.2)" : "grayscale(0)",
+            transitionProperty: "filter",
+            transitionDuration: `${animationDuration}ms`,
+            transitionTimingFunction: "ease-in-out",
+          }}
         />
 
         <div className="relative z-10 flex h-full flex-col items-center justify-center gap-8 text-white">
           <div className="relative w-80 h-[100px] max-sm:w-60">
             <Image
               src={"/assets/logo-new.png"}
+              alt="GAPC 2026 Logo"
+              fill
+              priority
+              className="object-contain"
+              style={{
+                opacity: newYear ? 0 : 1,
+                transitionProperty: "opacity",
+                transitionDuration: `${animationDuration}ms`,
+                transitionTimingFunction: "ease-in-out",
+              }}
+            />
+            <Image
+              src={"/assets/logo2027.png"}
               alt="GAPC 2027 Logo"
               fill
               priority
               className="object-contain"
+              style={{
+                opacity: newYear ? 1 : 0,
+                transitionProperty: "opacity",
+                transitionDuration: `${animationDuration}ms`,
+                transitionTimingFunction: "ease-in-out",
+              }}
             />
           </div>
 
@@ -41,9 +66,7 @@ const AboutUs = () => {
                   .changeDelay(70)
                   .changeDeleteSpeed(70)
                   .typeString("GAPC 202")
-                  .typeString(
-                    "<span class='text-[var(--gapc-color-new)]'>6</span>",
-                  )
+                  .typeString("<span class='text-[var(--gapc-color)]'>6</span>")
                   .pauseFor(2000)
                   .deleteChars(1)
                   .typeString(
