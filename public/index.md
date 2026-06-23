@@ -2,7 +2,7 @@
 
 The Groningen Algorithmic Programming Contest (GAPC) is a 4 hour competitive programming contest, where students from University of Groningen form teams of 1 to 3 people. The target is to solve the most problems and win the champion's cup.
 
-The event will take place on the Saturday, 25th of April 2026 in the Bernoulliborg, from 9:00 - 20:00. This is a full-day event, where not only the lunch, dinner and snacks will be provided, but also you'll have the chance to interact with your fellow contestants and feel the ICPC-style event vibe. More details about the schedule can be found [here](/schedule/).
+The event will take place on TBA in the Bernoulliborg, from 9:00 - 20:00. This is a full-day event, where not only the lunch, dinner and snacks will be provided, but also you'll have the chance to interact with your fellow contestants and feel the ICPC-style event vibe. More details about the schedule can be found [here](/schedule/).
 
 ## Contest
 

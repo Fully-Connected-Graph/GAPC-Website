@@ -18,7 +18,7 @@ interface PreviewCardProjectProps {
 
 const PreviewCardProject: FC<PreviewCardProjectProps> = ({ post }) => {
   return (
-    <Card className="h-72 bg-white duration-100 hover:shadow-md">
+    <Card className="h-72 duration-100 hover:shadow-md hover:shadow-white/10">
       <Link href={`/${post.link.join("/")}`} className=" cursor-pointer">
         <div className="z-10 rounded-t-lg overflow-clip h-20 max-lg:h-24 max-sm:h-20">
           <Image
