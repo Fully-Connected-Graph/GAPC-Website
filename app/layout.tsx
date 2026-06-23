@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     countryName: "The Netherlands",
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon.png",
   },
 };
 
