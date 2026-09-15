@@ -40,11 +40,12 @@ jobs:
       - name: Add .nojekyll file
         run: touch ./out/.nojekyll
       - name: Deploy to Server
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.5
-        with:
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          server: ${{ secrets.FTP_SERVER }}
-          local_path: "./out/*"
-          remote_path: "/phoenix-storage/srv/fcg/gapc"
-          sftpArgs: "-o ConnectTimeout=5"
+        env:
+          SSHPASS: ${{ secrets.FTP_PASSWORD }}
+        run: |
+          sudo apt-get install -y -qq sshpass >/dev/null
+          # -c: compare by checksum so unchanged files (~400M of zips/pdfs) are skipped;
+          # mtimes are meaningless after a fresh checkout so the default quick-check can't be trusted.
+          sshpass -e rsync -rlc --stats \
+            -e "ssh -o StrictHostKeyChecking=no -o ConnectTimeout=5" \
+            ./out/ "${{ secrets.FTP_USERNAME }}@${{ secrets.FTP_SERVER }}:/phoenix-storage/srv/fcg/gapc/"
