@@ -7,31 +7,16 @@
   {
     "img": "https://svcover.nl/profile/3404/picture/square/256",
     "name": "Patrick Gheba",
-    "role": "Secretary"
-  },
-  {
-    "img": "https://svcover.nl/profile/2884/picture/square/256",
-    "name": "Andrew Rutherfoord",
-    "role": "Treasurer"
-  },
-  {
-    "img": "https://svcover.nl/profile/2798/picture/square/256",
-    "name": "Szymon Kucharski",
-    "role": "Systems Engineer"
+    "role": "Vice chair"
   },
   {
     "img": "https://svcover.nl/profile/3147/picture/square/256",
     "name": "Boyan Karakostov",
-    "role": "Vice-Chair"
+    "role": "General Member"
   },
   {
     "img": "https://svcover.nl/profile/3746/picture/square/256",
     "name": "Senshin Kawaguchi",
-    "role": "General Member"
-  },
-  {
-    "img": "https://svcover.nl/profile/3365/picture/square/256",
-    "name": "Luca Serban",
     "role": "General Member"
   },
   {
@@ -47,6 +32,11 @@
   {
     "img": "https://svcover.nl/profile/3872/picture/square/256",
     "name": "Rares Stanciu",
-    "role": "General Member"
+    "role": "Secretary"
+  },
+  {
+    "img": "https://svcover.nl/profile/3964/picture/square/256",
+    "name": "Anastasios Katafygiotis Katafygiotis ",
+    "role": "Treasurer"
   }
 ]
