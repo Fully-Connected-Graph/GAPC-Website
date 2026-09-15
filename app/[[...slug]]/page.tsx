@@ -20,18 +20,23 @@ const Page = async ({ params }: { params: { slug: string[] } }) => {
         </div>
       )}
       {(data.thumbnail || data.title) && (
-        <div className="relative mb-8 h-80 bg-swirl w-screen -translate-x-[calc(50vw-28rem)] max-lg:-translate-x-4 bg-black flex flex-col gap-6 justify-center overflow-hidden">
-          <h1 className="text-5xl text-white text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 drop-shadow-md">
+        <div className="relative mb-8 h-80 bg-black w-screen -translate-x-[calc(50vw-28rem)] max-lg:-translate-x-4 flex flex-col gap-6 justify-center overflow-hidden">
+          <div
+            className="absolute inset-0 bg-no-repeat bg-cover"
+            aria-hidden="true"
+            style={{
+              backgroundImage: "url('/assets/background-new.svg')",
+              filter: "grayscale(1) brightness(1.2)",
+            }}
+          />
+          <h1
+            className="text-5xl text-white text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 font-jbMono px-6 py-3 backdrop-blur-sm"
+            style={{
+              textShadow: "0 0 30px rgba(0,0,0,1), 0 2px 8px rgba(0,0,0,0.9)",
+            }}
+          >
             {data.title}
           </h1>
-          <Image
-            src={data.thumbnail}
-            alt={data.title}
-            layout="responsive"
-            width={1920}
-            height={1080}
-            className="object-cover w-full h-full blur-sm"
-          />
         </div>
       )}
       <div>

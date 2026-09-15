@@ -7,7 +7,7 @@ thumbnail: /assets/thumbnails/looking-at-papers.jpeg
 
 ### Definitions
 
-- GAPC: The Groningen Algorithm Programming Contest 2026
+- GAPC: The Groningen Algorithm Programming Contest 2027
 - Organisation: The event is organised by the members and friends of Fully Connected Graph
 - Website: The website is maintained by the organisation and available at <a href="https://gapc.svcover.nl/" target="_blank">here</a>.
 - Discord: The GAPC discord is the <a href="https://discord.com/invite/JfzxyBHPsH" target="_blank">FCG Discord</a>.
@@ -36,7 +36,7 @@ This is an open contest to all students within Groningen region.
 All the teams:
 
 - Participate for free.
-- Participate in the teams' pool for the title “Winner of the Groningen Algorithm Programming Contest 2026”.
+- Participate in the teams' pool for the title “Winner of the Groningen Algorithm Programming Contest 2027”.
 
 ### Photos and videos
 

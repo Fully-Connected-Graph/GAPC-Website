@@ -24,7 +24,7 @@ export const MemberList: FC = async () => {
         </div>
         <div className="grid grid-cols-4 gap-1 max-lg:grid-cols-2 max-sm:grid-cols-1">
           {members.map((member, i) => (
-            <div key={i} className="bg-white rounded-lg p-4">
+            <div key={i} className="bg-card rounded-lg p-4">
               <Image
                 src={member.img}
                 alt={member.name}
@@ -45,7 +45,7 @@ export const MemberList: FC = async () => {
         If you have any questions, please send us an email at{" "}
         <a
           href="mailto:programming_committee@svcover.nl"
-          className="text-pink-500 underline"
+          className="text-gray-300 underline underline"
         >
           programming_committee@svcover.nl
         </a>
@@ -53,7 +53,7 @@ export const MemberList: FC = async () => {
         answer quicker you can also join the{" "}
         <a
           href="https://discord.com/invite/JfzxyBHPsH"
-          className="text-pink-500 underline"
+          className="text-gray-300 underline underline"
         >
           FCG Discord
         </a>

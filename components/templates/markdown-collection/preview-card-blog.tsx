@@ -16,7 +16,7 @@ interface PreviewCardBlogProps {
 const PreviewCardBlog: FC<PreviewCardBlogProps> = ({ post }) => {
   return (
     <Link href={`/${post.link.join("/")}`}>
-      <Card className="h-72 cursor-pointer bg-white duration-100 hover:shadow-md">
+      <Card className="h-72 cursor-pointer duration-100 hover:shadow-md hover:shadow-white/10">
         <div className="z-10 rounded-t-lg overflow-clip h-20 max-lg:h-24 max-sm:h-20">
           <Image
             src={post.thumbnail || "/assets/placeholder.png"}
