@@ -80,6 +80,10 @@ html {
   @apply mb-0;
 }
 
+.markdown-body :is(h1, h2, h3, h4) {
+  scroll-margin-top: 6rem;
+}
+
 .markdown-body img {
   @apply max-w-[100%] max-h-[50vh];
   @apply mx-auto my-4;

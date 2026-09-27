@@ -28,6 +28,6 @@
 
 - [Final Standings](/assets/2023/final_standings/index.html)
 - [Problem set](/assets/2023/problems/contest.en.pdf)
-- [Solutions](/assets/2023/problems/solutions.en.pdf)
-- [Test cases](/assets/2023/problems/gapc2023.zip)
+- [Solutions](/assets/2023/problems/solutions.pdf)
+- [Test cases](/assets/2023/problems/gapc23.zip)
 - [Photos](https://www.svcover.nl/photos/1578)

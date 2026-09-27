@@ -1,13 +1,12 @@
 ---
 title: Schedule
-thumbnail: /assets/thumbnails/lecture.png
 ---
 
 ## Contest schedule
 
-The event will take place on TBA
+The event will take place on the 24th of April 2027.
 
-All time is relative to Groningen, Netherlands (GMT+2)
+All times are Groningen time (CEST, UTC+2).
 
 | Start | End   | Event                                 |
 | ----- | ----- | ------------------------------------- |
@@ -16,7 +15,7 @@ All time is relative to Groningen, Netherlands (GMT+2)
 | 11:10 | 11:40 | Test session                          |
 | 11:45 | 12:00 | Q & A session                         |
 | 12:00 | 12:45 | Lunch and Networking                  |
-| 12:20 | 13:00 | Teams have access to the contest site |
+| 12:45 | 13:00 | Teams have access to the contest site |
 | 13:00 | 17:00 | Contest (scoreboard frozen at 16:00)  |
 | 17:15 | 17:40 | Solutions presentation                |
 | 17:40 | 18:00 | Award ceremony                        |

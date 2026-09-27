@@ -7,9 +7,9 @@ thumbnail: /assets/thumbnails/looking-at-papers.jpeg
 
 ### Definitions
 
-- GAPC: The Groningen Algorithm Programming Contest 2027
+- GAPC: The Groningen Algorithmic Programming Contest 2027
 - Organisation: The event is organised by the members and friends of Fully Connected Graph
-- Website: The website is maintained by the organisation and available at <a href="https://gapc.svcover.nl/" target="_blank">here</a>.
+- Website: The website is maintained by the organisation and available at [gapc.svcover.nl](https://gapc.svcover.nl/).
 - Discord: The GAPC discord is the <a href="https://discord.com/invite/JfzxyBHPsH" target="_blank">FCG Discord</a>.
 - Jury: The group responsible for creating the problem set and checking the solutions submitted by the participants.
 - Technical staff: The group of people responsible for the system (the digital environment, jury system, printing, etc.).
@@ -19,7 +19,7 @@ thumbnail: /assets/thumbnails/looking-at-papers.jpeg
 
 ## Contact
 
-For any questions related to the contest, please contact the organiser either by sending a message on the GAPC discord or by sending an email to programming_committee@svcover.nl.
+For any questions related to the contest, please contact the organiser either by sending a message on the GAPC discord or by sending an email to [programming_committee@svcover.nl](mailto:programming_committee@svcover.nl).
 
 ## Participation
 
@@ -36,7 +36,7 @@ This is an open contest to all students within Groningen region.
 All the teams:
 
 - Participate for free.
-- Participate in the teams' pool for the title “Winner of the Groningen Algorithm Programming Contest 2027”.
+- Participate in the teams' pool for the title “Winner of the Groningen Algorithmic Programming Contest 2027”.
 
 ### Photos and videos
 
@@ -58,17 +58,17 @@ There will be 1 or more people that will capture digital content (photo, video e
 
 - At least six problems will be posted. The jury intends to develop problems with minimal dependence on detailed knowledge of a particular application area or a particular contest language.
 - A contestant may submit a claim of ambiguity or error for a problem statement by submitting a clarification request to a judge. If the judges agree that an ambiguity or error exists, a clarification will be issued to all contestants.
-- The jury has the right to change or withdraw problems during the contest before informing all teams.
-- A solution for a problem has to be written in C99, C++ (version 14 or later will be available), Python (versions 3 will be available), Java (version 11 or later), unless problem statement explicitly states otherwise.
+- The jury has the right to change or withdraw problems during the contest, after informing all teams.
+- A solution for a problem has to be written in C, C++, Python 3, Java or Kotlin (see [Languages](#languages) for the exact versions), unless the problem statement explicitly states otherwise.
 
-# System
+## System
 
 - A team is disqualified if they submit a harmful code that disrupts the contest.
 - A submission can use the standard library of the language, which means that libraries such as "numpy" are not available.
 
 ## Contest machine
 
-- The contest machine is provided by the organisers and it will be a HP 450 G9 laptop (Intel Core i5-1235U Processor, 10 cores (HT disabled), 4.4 GHz, turbo disabled, 8GB RAM) (subject to change).
+- The contest machine is provided by the organisers. The exact model is TBA.
 
 ## Software
 
@@ -93,28 +93,28 @@ There will be 1 or more people that will capture digital content (photo, video e
 
 ### IDEs
 
-o IntelliJ IDEA Community
+#### IntelliJ IDEA Community
 
 - Version: 2023.3.2
 - Workspace is set up
 - Plugins:
   - IdeaVim
 
-o CLion
+#### CLion
 
 - Version: 2023.3.2
 - Workspace is set up
 - Plugins:
   - IdeaVim
 
-o PyCharm Community
+#### PyCharm Community
 
 - Version: 2023.3.2
 - Workspace is set up
 - Plugins:
   - IdeaVim
 
-o Visual Studio Code
+#### Visual Studio Code
 
 - Version: 1.88.1
 - Plugins:
@@ -129,7 +129,7 @@ o Visual Studio Code
   - Python Debugger - Microsoft
   - TSLint - Microsoft
 
-o Code::Blocks
+#### Code::Blocks
 
 - Version: 20.03
 
@@ -137,43 +137,37 @@ o Code::Blocks
 
 The following languages are allowed during the contest:
 
-o C
+### C
 
 - Compiler version: 11.4.0
 - Standard: gnu17
 
-o C++
+### C++
 
 - Compiler version: 11.4.0
 - Standard: gnu++20
 
-o Python
+### Python
 
 - Version: PyPy 7.3.9 (Python 3.8.13)
 
-o Java
+### Java
 
 - Version: 11.0.22
+
+### Kotlin
+
+- Version: TBA
 
 ## Compilation of Submissions
 
 During the contest, teams will submit proposed solutions to the contest problems to the Judges using the DOMjudge contest control system (version 8.1). This can be done through the web interface, or using the submit client. Source files submitted to the Judges will be compiled using the following command line arguments for the respective language:
 
-o C:
-
-- gcc -std=gnu17 -x c -Wall -O2 -static -pipe -o $1 "$1.c" -lm
-
-o C++:
-
-- g++ -std=gnu++20 -x c++ -Wall -O2 -static -pipe -o $1 "$1.cpp" -lm
-
-o Python 3:
-
-- pypy3 $@
-
-o Java:
-
-- javac -encoding UTF-8 -sourcepath . -d . $@
+- C: `gcc -std=gnu17 -x c -Wall -O2 -static -pipe -o $1 "$1.c" -lm`
+- C++: `g++ -std=gnu++20 -x c++ -Wall -O2 -static -pipe -o $1 "$1.cpp" -lm`
+- Python 3: `pypy3 $@`
+- Java: `javac -encoding UTF-8 -sourcepath . -d . $@`
+- Kotlin: TBA
 
 ## Execution of Submissions
 
@@ -181,11 +175,12 @@ o Java:
 - For C/C++: the executable file generated by the compiler will be executed to generate the output of the submission.
 - For Python 3: the main source file will be executed by the PyPy3 Python3 interpreter to generate the output of the submission.
 - For Java: the compiled main class will be executed using the following command:
-  java -Dfile.encoding=UTF-8 -XX:+UseSerialGC -Xss65536k -Xms1966080k -Xmx1966080k $@
+  `java -Dfile.encoding=UTF-8 -XX:+UseSerialGC -Xss65536k -Xms1966080k -Xmx1966080k $@`
+- For Kotlin: the compiled main class will be executed on the JVM with the same stack and heap settings as Java.
 
-Compilation and execution as described above will take place in a “sandbox” on a dedicated judging machine. The judging machine will be identical to the machines used by teams (see Hardware).
+Compilation and execution as described above will take place in a “sandbox” on a dedicated judging machine. The judging machine will be identical to the machines used by teams (see [Contest machine](#contest-machine)).
 
-The sandbox will allocate 2 GiB of memory; the entire program, including its runtime environment, must execute within this memory limit. For interpreted languages (Python, Java, and Kotlin) the runtime environment includes the interpreter (that is, the PyPy3 interpreter for Python and the JVM for Java/Kotlin). The sandbox memory allocation size will be the same for all languages and all contest problems. For Java and Kotlin, the above commands show the stack size and heap size settings that will be used when the program is run in the sandbox.
+The sandbox will allocate 2 GiB of memory; the entire program, including its runtime environment, must execute within this memory limit. For interpreted languages (Python, Java, and Kotlin) the runtime environment includes the interpreter (that is, the PyPy3 interpreter for Python and the JVM for Java/Kotlin). The sandbox memory allocation size will be the same for all languages and all contest problems. For Java and Kotlin, the above command shows the stack size and heap size settings that will be used when the program is run in the sandbox.
 
 ## Documentation / Specification / Reference material
 
@@ -201,10 +196,7 @@ The following reference materials will be available on the teams’ workstations
 
 - Each run is judged as accepted or rejected by the judging system, and the team is notified of the results.
 - For each problem, the jury has a correct solution and test data.
-- The winner of the pool is decided by (in order):
-  - The team with the most solved problems.
-  - The team with the least total time. The total time is the sum of the time elapsed from the beginning of the contest to the submission of the accepted run, plus 20 penalty minutes for every rejected run for that problem regardless of the submission time. Time is not consumed when the problem is not solved.
-  - The team that first submitted its last accepted problem is ranked higher. When a tie still remains, the team that first submitted its second-last accepted problem is ranked higher, and so on. When this does not resolve the tie, the ranks will be determined by chance.
+- The ranking is described under [Score and Leaderboard](#score-and-leaderboard).
 - The problem set is the responsibility of the jury.
 - The jury must be contacted through a “Clarification Request”.
 
@@ -221,7 +213,7 @@ The following reference materials will be available on the teams’ workstations
   - WRONG-ANSWER The output of your program was incorrect. This can happen simply because your solution is not correct, but remember that your output must comply exactly with the specifications of the judges.
   - TOO-LATE Bummer, you submitted after the contest ended! Your submission is stored but will not be processed anymore.
 
-- A link to the documentation of the judging system is <a  href="https://www.domjudge.org/snapshot/manual/team.html" target="_blank">here </a>. As a side note, not all the aspects presented in the link apply to this contest.
+- The documentation of the judging system can be found [here](https://www.domjudge.org/snapshot/manual/team.html). As a side note, not all the aspects presented in the link apply to this contest.
 
 ## Score and Leaderboard
 

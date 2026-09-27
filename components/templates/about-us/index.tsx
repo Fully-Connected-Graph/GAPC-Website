@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import Typewriter from "typewriter-effect";
 
@@ -116,13 +117,7 @@ const AboutUs = () => {
             }`}
             style={{ transitionDuration: `${animationDuration}ms` }}
           >
-            <a
-              href="https://forms.gle/sM5kiHmtXJybCbFv8"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Sign up now!
-            </a>
+            <Link href="/register/">Sign up now!</Link>
           </Button>
         </div>
       </div>

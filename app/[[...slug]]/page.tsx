@@ -1,8 +1,10 @@
+import { AutoplayVideos } from "@/components/atoms/autoplay-videos";
 import { MemberList } from "@/components/molecules/member-list";
 import AboutUs from "@/components/templates/about-us";
 import { create, walk } from "@/lib/server_utils";
 import { X } from "lucide-react";
 import Image from "next/image";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 const Page = async ({
@@ -47,6 +49,7 @@ const Page = async ({
       <div>
         <div className="markdown-body">
           <article dangerouslySetInnerHTML={{ __html: markdown }} />
+          <AutoplayVideos />
         </div>
       </div>
       {!params.slug && (
@@ -103,6 +106,19 @@ const Page = async ({
 };
 
 export default Page;
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug?: string[] }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  if (!slug) return {};
+
+  const { data } = await create({ slug });
+  const fallback = slug[0].charAt(0).toUpperCase() + slug[0].slice(1);
+  return { title: data?.title || fallback };
+}
 
 export async function generateStaticParams() {
   const slugs = [];
