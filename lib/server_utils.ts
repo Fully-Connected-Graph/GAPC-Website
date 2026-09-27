@@ -2,7 +2,6 @@ import { existsSync, readFileSync, promises } from "fs";
 import path from "path";
 import matter from "gray-matter";
 import markdownit from "markdown-it";
-import mdk from "@traptitech/markdown-it-katex";
 import mdh from "markdown-it-highlightjs";
 import type MarkdownIt from "markdown-it";
 
@@ -38,7 +37,6 @@ export function parseMarkdown(text: string) {
     html: true,
     linkify: true,
   };
-  const katexSettings = { blockClass: "math-block", errorColor: " #cc0000" };
   const highlightSettings = {
     inline: false,
   };
@@ -46,7 +44,6 @@ export function parseMarkdown(text: string) {
   const { data, content } = matter(text);
 
   const markdown = markdownit(mdSettings)
-    .use(mdk, katexSettings)
     .use(mdh, highlightSettings)
     .use(headingIds)
     .render(content);

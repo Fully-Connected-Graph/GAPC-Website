@@ -8468,6 +8468,11 @@
         max-width: 700px;
       }
     </style>
+    <style>
+      body {
+        padding-top: 16px !important;
+      }
+    </style>
   </head>
   <body
     data-hasqtip="0"
@@ -8475,248 +8480,6 @@
     data-gr-ext-installed=""
     data-new-gr-c-s-loaded="14.1107.0"
   >
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a
-        class="navbar-brand hidden-sm-down"
-        href="https://gapc23.cloudcontest.org/jury"
-        >DOMjudge</a
-      >
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#menuDefault"
-        aria-controls="menuDefault"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div
-        class="collapse navbar-collapse"
-        id="menuDefault"
-        data-update-url="/jury/updates"
-      >
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="https://gapc23.cloudcontest.org/jury/scoreboard#"
-              id="navbarDropdownJudgehosts"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              <i class="fas fa-gavel"></i> judgehosts
-              <span
-                class="badge badge-warning"
-                id="num-alerts-judgehosts"
-                style="display: none"
-              ></span>
-              <span
-                class="badge badge-danger"
-                id="num-alerts-internalerrors"
-                style="display: none"
-              ></span>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a
-                class="dropdown-item"
-                href="https://gapc23.cloudcontest.org/jury/judgehosts"
-                id="menu_judgehosts"
-              >
-                <i class="fas fa-server fa-fw"></i> judgehosts
-                <span
-                  class="badge badge-warning"
-                  id="num-alerts-judgehosts-sub"
-                ></span>
-              </a>
-              <a
-                class="dropdown-item dropdown-disabled"
-                href="https://gapc23.cloudcontest.org/jury/internal-errors"
-                id="menu_internal_error"
-              >
-                <i class="fas fa-bolt fa-fw"></i> internal error
-                <span
-                  class="badge badge-danger"
-                  id="num-alerts-internalerrors-sub"
-                ></span>
-              </a>
-            </div>
-          </li>
-
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="https://gapc23.cloudcontest.org/jury/clarifications"
-              id="menu_clarifications"
-              ><i class="fas fa-comments"></i> clarifications
-              <span
-                class="badge badge-info"
-                id="num-alerts-clarifications"
-                style="display: none"
-              ></span
-            ></a>
-          </li>
-
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="https://gapc23.cloudcontest.org/jury/submissions"
-              ><i class="fas fa-file-code"></i> submissions</a
-            >
-          </li>
-
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="https://gapc23.cloudcontest.org/jury/rejudgings"
-              id="menu_rejudgings"
-              ><i class="fas fa-sync"></i> rejudgings
-              <span
-                class="badge badge-info"
-                id="num-alerts-rejudgings"
-                style="display: none"
-              ></span
-            ></a>
-          </li>
-
-          <li class="nav-item active">
-            <a
-              class="nav-link"
-              href="https://gapc23.cloudcontest.org/jury/scoreboard"
-              ><i class="fas fa-list-ol"></i> scoreboard</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              target="_top"
-              href="https://gapc23.cloudcontest.org/team"
-              ><i class="fas fa-arrow-right"></i> team</a
-            >
-          </li>
-        </ul>
-
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="https://gapc23.cloudcontest.org/jury/scoreboard#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              <i class="fas fa-user"></i> admin
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a
-                class="dropdown-item disabled"
-                href="https://gapc23.cloudcontest.org/jury/scoreboard#"
-                >Administrator</a
-              >
-
-              <a
-                class="dropdown-item d-none"
-                href="https://gapc23.cloudcontest.org/jury/scoreboard#"
-                id="notify_disable"
-              >
-                <i class="fas fa-bell-slash fa-fw"></i> Disable Notifications
-              </a>
-              <a
-                class="dropdown-item"
-                href="https://gapc23.cloudcontest.org/jury/scoreboard#"
-                id="notify_enable"
-              >
-                <i class="fas fa-bell fa-fw"></i> Enable Notifications
-              </a>
-
-              <a
-                class="dropdown-item"
-                href="https://gapc23.cloudcontest.org/jury/scoreboard#"
-                id="refresh-navitem"
-              >
-                <i class="fas fa-sync-alt fa-fw"></i>
-                <span id="refresh-toggle"> Disable Refresh </span>
-                <span class="small text-muted">(30s)</span>
-              </a>
-
-              <a
-                class="dropdown-item"
-                href="https://gapc23.cloudcontest.org/logout"
-                ><i class="fas fa-sign-out-alt fa-fw"></i>Logout
-              </a>
-            </div>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="https://gapc23.cloudcontest.org/jury/scoreboard#"
-              id="navbarDropdownContests"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              <i class="fas fa-trophy"></i> GAPC_2023
-            </a>
-            <div
-              class="dropdown-menu scrollable-menu"
-              aria-labelledby="navbarDropdown"
-              data-current-contest=""
-            >
-              <a
-                class="dropdown-item disabled"
-                href="https://gapc23.cloudcontest.org/jury/scoreboard#"
-                >Change Contest</a
-              >
-              <a
-                class="dropdown-item"
-                href="https://gapc23.cloudcontest.org/jury/change-contest/-1"
-                >no contest</a
-              >
-              <div class="dropdown-divider"></div>
-              <a
-                class="dropdown-item"
-                href="https://gapc23.cloudcontest.org/jury/change-contest/8"
-                >jury_test</a
-              >
-              <a
-                class="dropdown-item"
-                href="https://gapc23.cloudcontest.org/jury/change-contest/1"
-                >admin-test</a
-              >
-            </div>
-          </li>
-        </ul>
-        <div class="navbar-text" style="white-space: nowrap">
-          <span style="padding-left: 10px">
-            <i class="fas fa-clock loading-indicator"></i>
-          </span>
-          <span id="timeleft">contest over</span>
-        </div>
-
-        <script>
-          var initial = 1683025810;
-          var localInitial = new Date().getTime();
-          var activatetime = 1672574400;
-          var starttime = 1682766000;
-          var endtime = 1682780400;
-          var clientOffset = localInitial - new Date(initial * 1000).getTime();
-          var timeleftelt = document.getElementById("timeleft");
-
-          setInterval(function () {
-            updateClock();
-          }, 1000);
-          updateClock();
-        </script>
-      </div>
-    </nav>
     <div class="container-fluid">
       <div class="row">
         <div class="col-12">
@@ -8736,82 +8499,6 @@
                 >
                   final standings
                 </span>
-              </div>
-            </div>
-
-            <div class="dropdown">
-              <button
-                class="btn btn-outline-secondary btn-sm m-2 dropdown-toggle"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                id="filter-toggle"
-              >
-                <i class="fas fa-filter"></i>
-                Filter
-              </button>
-
-              <div class="dropdown-menu" aria-labelledby="filter-toggle">
-                <form method="get">
-                  <div class="filterbox">
-                    <div class="form-row">
-                      <div class="form-group">
-                        <label for="scoreboard-filter-affil"
-                          >Affiliations</label
-                        >
-                        <select
-                          id="scoreboard-filter-affil"
-                          class="form-control mr-2"
-                          multiple=""
-                          size="8"
-                          name="affiliations[]"
-                        >
-                          <option value="3">
-                            Delft University of Technology
-                          </option>
-                          <option value="4">
-                            Eindhoven University of Technology
-                          </option>
-                          <option value="2">University of Groningen</option>
-                          <option value="5">
-                            Vrije Universiteit Amsterdam
-                          </option>
-                        </select>
-                      </div>
-                      <div class="form-group">
-                        <label for="scoreboard-filter-category"
-                          >Categories</label
-                        >
-                        <select
-                          id="scoreboard-filter-category"
-                          class="form-control mr-2"
-                          multiple=""
-                          size="8"
-                          name="categories[]"
-                        >
-                          <option value="1">System</option>
-                          <option value="2">Self-Registered</option>
-                          <option value="3">Participants</option>
-                          <option value="4">Observers</option>
-                          <option value="5">Organisation</option>
-                          <option value="6">Jury</option>
-                        </select>
-                      </div>
-                    </div>
-                    <input
-                      type="submit"
-                      class="btn btn-primary btn-sm align-top"
-                      name="filter"
-                      value="filter"
-                    />
-                    <input
-                      type="submit"
-                      class="btn btn-secondary btn-sm align-top"
-                      name="clear"
-                      value="clear"
-                    />
-                  </div>
-                </form>
               </div>
             </div>
 
@@ -8863,10 +8550,7 @@
                     scope="col"
                     style="top: 56px"
                   >
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/problems/15"
-                      target="_self"
-                    >
+                    <a target="_self">
                       <span
                         class="badge problem-badge"
                         style="
@@ -8883,10 +8567,7 @@
                     scope="col"
                     style="top: 56px"
                   >
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/problems/16"
-                      target="_self"
-                    >
+                    <a target="_self">
                       <span
                         class="badge problem-badge"
                         style="
@@ -8903,10 +8584,7 @@
                     scope="col"
                     style="top: 56px"
                   >
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/problems/17"
-                      target="_self"
-                    >
+                    <a target="_self">
                       <span
                         class="badge problem-badge"
                         style="
@@ -8923,10 +8601,7 @@
                     scope="col"
                     style="top: 56px"
                   >
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/problems/18"
-                      target="_self"
-                    >
+                    <a target="_self">
                       <span
                         class="badge problem-badge"
                         style="
@@ -8943,10 +8618,7 @@
                     scope="col"
                     style="top: 56px"
                   >
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/problems/19"
-                      target="_self"
-                    >
+                    <a target="_self">
                       <span
                         class="badge problem-badge"
                         style="
@@ -8963,10 +8635,7 @@
                     scope="col"
                     style="top: 56px"
                   >
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/problems/20"
-                      target="_self"
-                    >
+                    <a target="_self">
                       <span
                         class="badge problem-badge"
                         style="
@@ -8983,10 +8652,7 @@
                     scope="col"
                     style="top: 56px"
                   >
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/problems/21"
-                      target="_self"
-                    >
+                    <a target="_self">
                       <span
                         class="badge problem-badge"
                         style="
@@ -9003,10 +8669,7 @@
                     scope="col"
                     style="top: 56px"
                   >
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/problems/22"
-                      target="_self"
-                    >
+                    <a target="_self">
                       <span
                         class="badge problem-badge"
                         style="
@@ -9023,10 +8686,7 @@
                     scope="col"
                     style="top: 56px"
                   >
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/problems/23"
-                      target="_self"
-                    >
+                    <a target="_self">
                       <span
                         class="badge problem-badge"
                         style="
@@ -9043,10 +8703,7 @@
                     scope="col"
                     style="top: 56px"
                   >
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/problems/24"
-                      target="_self"
-                    >
+                    <a target="_self">
                       <span
                         class="badge problem-badge"
                         style="
@@ -9064,9 +8721,7 @@
                 <tr class="sortorderswitch" id="team:91">
                   <td class="scorepl">1</td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/3"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -9077,9 +8732,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/3"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -9090,7 +8743,7 @@
                     </a>
                   </td>
                   <td class="scoretn cl_FFFFFF" title="Infinity DemanD">
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/91">
+                    <a>
                       <span class="forceWidth">
                         <span
                           class="badge badge-warning"
@@ -9109,17 +8762,13 @@
                   <td class="scorett">604</td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/91?restrict%5Bprobid%5D=15"
-                    >
+                    <a>
                       <div class="score_correct">13 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/91?restrict%5Bprobid%5D=16"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 1 try </span>
                       </div>
@@ -9127,9 +8776,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/91?restrict%5Bprobid%5D=17"
-                    >
+                    <a>
                       <div class="score_correct score_first">
                         92 <span> 1 try </span>
                       </div>
@@ -9137,17 +8784,13 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/91?restrict%5Bprobid%5D=18"
-                    >
+                    <a>
                       <div class="score_correct">21 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/91?restrict%5Bprobid%5D=19"
-                    >
+                    <a>
                       <div class="score_correct score_first">
                         37 <span> 1 try </span>
                       </div>
@@ -9155,17 +8798,13 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/91?restrict%5Bprobid%5D=20"
-                    >
+                    <a>
                       <div class="score_correct">48 <span> 2 tries </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/91?restrict%5Bprobid%5D=21"
-                    >
+                    <a>
                       <div class="score_correct score_first">
                         136 <span> 2 tries </span>
                       </div>
@@ -9173,25 +8812,19 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/91?restrict%5Bprobid%5D=22"
-                    >
+                    <a>
                       <div class="score_correct">57 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/91?restrict%5Bprobid%5D=23"
-                    >
+                    <a>
                       <div class="score_correct">64 <span> 2 tries </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/91?restrict%5Bprobid%5D=24"
-                    >
+                    <a>
                       <div class="score_correct score_first">
                         76 <span> 1 try </span>
                       </div>
@@ -9202,9 +8835,7 @@
                 <tr class="" id="team:90">
                   <td class="scorepl">2</td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/5"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -9215,9 +8846,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/5"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -9228,7 +8857,7 @@
                     </a>
                   </td>
                   <td class="scoretn cl_FFFFFF" title="VU stormers">
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/90">
+                    <a>
                       <span class="forceWidth"> VU stormers </span>
                       <span class="univ forceWidth">
                         Vrije Universiteit Amsterdam
@@ -9239,9 +8868,7 @@
                   <td class="scorett">1115</td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/90?restrict%5Bprobid%5D=15"
-                    >
+                    <a>
                       <div class="score_correct">36 <span> 2 tries </span></div>
                     </a>
                   </td>
@@ -9249,25 +8876,19 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/90?restrict%5Bprobid%5D=17"
-                    >
+                    <a>
                       <div class="score_correct">93 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/90?restrict%5Bprobid%5D=18"
-                    >
+                    <a>
                       <div class="score_correct">13 <span> 2 tries </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/90?restrict%5Bprobid%5D=19"
-                    >
+                    <a>
                       <div class="score_correct">
                         180 <span> 2 tries </span>
                       </div>
@@ -9275,9 +8896,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/90?restrict%5Bprobid%5D=20"
-                    >
+                    <a>
                       <div class="score_correct score_first">
                         17 <span> 1 try </span>
                       </div>
@@ -9285,33 +8904,25 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/90?restrict%5Bprobid%5D=21"
-                    >
+                    <a>
                       <div class="score_correct">168 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/90?restrict%5Bprobid%5D=22"
-                    >
+                    <a>
                       <div class="score_correct">69 <span> 4 tries </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/90?restrict%5Bprobid%5D=23"
-                    >
+                    <a>
                       <div class="score_correct">73 <span> 3 tries </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/90?restrict%5Bprobid%5D=24"
-                    >
+                    <a>
                       <div class="score_correct">
                         206 <span> 6 tries </span>
                       </div>
@@ -9322,9 +8933,7 @@
                 <tr class="" id="team:92">
                   <td class="scorepl">3</td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/3"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -9335,9 +8944,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/3"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -9348,7 +8955,7 @@
                     </a>
                   </td>
                   <td class="scoretn cl_FFFFFF" title="`">
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/92">
+                    <a>
                       <span class="forceWidth"> ` </span>
                       <span class="univ forceWidth">
                         Delft University of Technology
@@ -9359,17 +8966,13 @@
                   <td class="scorett">1253</td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/92?restrict%5Bprobid%5D=15"
-                    >
+                    <a>
                       <div class="score_correct">98 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/92?restrict%5Bprobid%5D=16"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 2 tries </span>
                       </div>
@@ -9377,9 +8980,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/92?restrict%5Bprobid%5D=17"
-                    >
+                    <a>
                       <div class="score_correct">
                         209 <span> 2 tries </span>
                       </div>
@@ -9387,17 +8988,13 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/92?restrict%5Bprobid%5D=18"
-                    >
+                    <a>
                       <div class="score_correct">158 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/92?restrict%5Bprobid%5D=19"
-                    >
+                    <a>
                       <div class="score_correct">
                         185 <span> 4 tries </span>
                       </div>
@@ -9405,9 +9002,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/92?restrict%5Bprobid%5D=20"
-                    >
+                    <a>
                       <div class="score_correct">
                         148 <span> 2 tries </span>
                       </div>
@@ -9415,33 +9010,25 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/92?restrict%5Bprobid%5D=21"
-                    >
+                    <a>
                       <div class="score_correct">168 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/92?restrict%5Bprobid%5D=22"
-                    >
+                    <a>
                       <div class="score_correct">34 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/92?restrict%5Bprobid%5D=23"
-                    >
+                    <a>
                       <div class="score_correct">47 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/92?restrict%5Bprobid%5D=24"
-                    >
+                    <a>
                       <div class="score_correct">86 <span> 2 tries </span></div>
                     </a>
                   </td>
@@ -9450,9 +9037,7 @@
                 <tr class="" id="team:75">
                   <td class="scorepl">4</td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -9463,9 +9048,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -9476,7 +9059,7 @@
                     </a>
                   </td>
                   <td class="scoretn cl_FFFFFF" title="cat python.bat">
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/75">
+                    <a>
                       <span class="forceWidth"> cat python.bat </span>
                       <span class="univ forceWidth">
                         University of Groningen
@@ -9487,9 +9070,7 @@
                   <td class="scorett">669</td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/75?restrict%5Bprobid%5D=15"
-                    >
+                    <a>
                       <div class="score_correct">94 <span> 1 try </span></div>
                     </a>
                   </td>
@@ -9497,9 +9078,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/75?restrict%5Bprobid%5D=17"
-                    >
+                    <a>
                       <div class="score_correct">
                         223 <span> 4 tries </span>
                       </div>
@@ -9507,9 +9086,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/75?restrict%5Bprobid%5D=18"
-                    >
+                    <a>
                       <div class="score_correct score_first">
                         8 <span> 2 tries </span>
                       </div>
@@ -9517,9 +9094,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/75?restrict%5Bprobid%5D=19"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 4 tries </span>
                       </div>
@@ -9527,9 +9102,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/75?restrict%5Bprobid%5D=20"
-                    >
+                    <a>
                       <div class="score_correct">17 <span> 1 try </span></div>
                     </a>
                   </td>
@@ -9537,25 +9110,19 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/75?restrict%5Bprobid%5D=22"
-                    >
+                    <a>
                       <div class="score_correct">35 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/75?restrict%5Bprobid%5D=23"
-                    >
+                    <a>
                       <div class="score_correct">46 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/75?restrict%5Bprobid%5D=24"
-                    >
+                    <a>
                       <div class="score_correct">
                         126 <span> 3 tries </span>
                       </div>
@@ -9566,9 +9133,7 @@
                 <tr class="" id="team:71">
                   <td class="scorepl">5</td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -9579,9 +9144,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -9592,7 +9155,7 @@
                     </a>
                   </td>
                   <td class="scoretn cl_FFFFFF" title="Balloon Enthusiasts">
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/71">
+                    <a>
                       <span class="forceWidth"> Balloon Enthusiasts </span>
                       <span class="univ forceWidth">
                         University of Groningen
@@ -9603,9 +9166,7 @@
                   <td class="scorett">671</td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/71?restrict%5Bprobid%5D=15"
-                    >
+                    <a>
                       <div class="score_correct">8 <span> 1 try </span></div>
                     </a>
                   </td>
@@ -9613,9 +9174,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/71?restrict%5Bprobid%5D=17"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 19 tries </span>
                       </div>
@@ -9623,17 +9182,13 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/71?restrict%5Bprobid%5D=18"
-                    >
+                    <a>
                       <div class="score_correct">16 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/71?restrict%5Bprobid%5D=19"
-                    >
+                    <a>
                       <div class="score_correct">
                         233 <span> 2 tries </span>
                       </div>
@@ -9641,9 +9196,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/71?restrict%5Bprobid%5D=20"
-                    >
+                    <a>
                       <div class="score_correct">51 <span> 4 tries </span></div>
                     </a>
                   </td>
@@ -9651,25 +9204,19 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/71?restrict%5Bprobid%5D=22"
-                    >
+                    <a>
                       <div class="score_correct">26 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/71?restrict%5Bprobid%5D=23"
-                    >
+                    <a>
                       <div class="score_correct">71 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/71?restrict%5Bprobid%5D=24"
-                    >
+                    <a>
                       <div class="score_correct">
                         166 <span> 2 tries </span>
                       </div>
@@ -9680,9 +9227,7 @@
                 <tr class="" id="team:52">
                   <td class="scorepl">6</td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -9693,9 +9238,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -9706,7 +9249,7 @@
                     </a>
                   </td>
                   <td class="scoretn cl_FFFFFF" title="The Pool Party">
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/52">
+                    <a>
                       <span class="forceWidth"> The Pool Party </span>
                       <span class="univ forceWidth">
                         University of Groningen
@@ -9717,9 +9260,7 @@
                   <td class="scorett">742</td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/52?restrict%5Bprobid%5D=15"
-                    >
+                    <a>
                       <div class="score_correct">70 <span> 1 try </span></div>
                     </a>
                   </td>
@@ -9729,17 +9270,13 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/52?restrict%5Bprobid%5D=18"
-                    >
+                    <a>
                       <div class="score_correct">25 <span> 2 tries </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/52?restrict%5Bprobid%5D=19"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 8 tries </span>
                       </div>
@@ -9747,17 +9284,13 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/52?restrict%5Bprobid%5D=20"
-                    >
+                    <a>
                       <div class="score_correct">65 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/52?restrict%5Bprobid%5D=21"
-                    >
+                    <a>
                       <div class="score_correct">
                         199 <span> 2 tries </span>
                       </div>
@@ -9765,9 +9298,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/52?restrict%5Bprobid%5D=22"
-                    >
+                    <a>
                       <div class="score_correct score_first">
                         21 <span> 1 try </span>
                       </div>
@@ -9775,17 +9306,13 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/52?restrict%5Bprobid%5D=23"
-                    >
+                    <a>
                       <div class="score_correct">95 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/52?restrict%5Bprobid%5D=24"
-                    >
+                    <a>
                       <div class="score_correct">
                         147 <span> 5 tries </span>
                       </div>
@@ -9796,9 +9323,7 @@
                 <tr class="" id="team:65">
                   <td class="scorepl">7</td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -9809,9 +9334,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -9825,7 +9348,7 @@
                     class="scoretn cl_FFFFFF"
                     title="Nonchalant Language Perpetrator Squad"
                   >
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/65">
+                    <a>
                       <span class="forceWidth">
                         Nonchalant Language Perpetrator Squad
                       </span>
@@ -9838,9 +9361,7 @@
                   <td class="scorett">954</td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/65?restrict%5Bprobid%5D=15"
-                    >
+                    <a>
                       <div class="score_correct">16 <span> 3 tries </span></div>
                     </a>
                   </td>
@@ -9848,25 +9369,19 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/65?restrict%5Bprobid%5D=17"
-                    >
+                    <a>
                       <div class="score_correct">230 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/65?restrict%5Bprobid%5D=18"
-                    >
+                    <a>
                       <div class="score_correct">20 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/65?restrict%5Bprobid%5D=19"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 4 tries </span>
                       </div>
@@ -9874,9 +9389,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/65?restrict%5Bprobid%5D=20"
-                    >
+                    <a>
                       <div class="score_correct">176 <span> 1 try </span></div>
                     </a>
                   </td>
@@ -9884,9 +9397,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/65?restrict%5Bprobid%5D=22"
-                    >
+                    <a>
                       <div class="score_correct">
                         107 <span> 2 tries </span>
                       </div>
@@ -9894,9 +9405,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/65?restrict%5Bprobid%5D=23"
-                    >
+                    <a>
                       <div class="score_correct">
                         136 <span> 3 tries </span>
                       </div>
@@ -9904,9 +9413,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/65?restrict%5Bprobid%5D=24"
-                    >
+                    <a>
                       <div class="score_correct">
                         149 <span> 2 tries </span>
                       </div>
@@ -9917,9 +9424,7 @@
                 <tr class="" id="team:87">
                   <td class="scorepl">8</td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/4"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -9930,9 +9435,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/4"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -9943,7 +9446,7 @@
                     </a>
                   </td>
                   <td class="scoretn cl_FFFFFF" title="Grain Obtainers">
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/87">
+                    <a>
                       <span class="forceWidth"> Grain Obtainers </span>
                       <span class="univ forceWidth">
                         Eindhoven University of Technology
@@ -9954,9 +9457,7 @@
                   <td class="scorett">995</td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/87?restrict%5Bprobid%5D=15"
-                    >
+                    <a>
                       <div class="score_correct">14 <span> 2 tries </span></div>
                     </a>
                   </td>
@@ -9964,9 +9465,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/87?restrict%5Bprobid%5D=17"
-                    >
+                    <a>
                       <div class="score_correct">
                         207 <span> 4 tries </span>
                       </div>
@@ -9974,9 +9473,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/87?restrict%5Bprobid%5D=18"
-                    >
+                    <a>
                       <div class="score_correct">27 <span> 1 try </span></div>
                     </a>
                   </td>
@@ -9984,9 +9481,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/87?restrict%5Bprobid%5D=20"
-                    >
+                    <a>
                       <div class="score_correct">
                         167 <span> 8 tries </span>
                       </div>
@@ -9994,9 +9489,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/87?restrict%5Bprobid%5D=21"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 1 try </span>
                       </div>
@@ -10004,25 +9497,19 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/87?restrict%5Bprobid%5D=22"
-                    >
+                    <a>
                       <div class="score_correct">69 <span> 3 tries </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/87?restrict%5Bprobid%5D=23"
-                    >
+                    <a>
                       <div class="score_correct">56 <span> 2 tries </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/87?restrict%5Bprobid%5D=24"
-                    >
+                    <a>
                       <div class="score_correct">
                         115 <span> 4 tries </span>
                       </div>
@@ -10033,9 +9520,7 @@
                 <tr class="" id="team:68">
                   <td class="scorepl">9</td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -10046,9 +9531,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -10059,7 +9542,7 @@
                     </a>
                   </td>
                   <td class="scoretn cl_FFFFFF" title="3Guys1Segfault">
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/68">
+                    <a>
                       <span class="forceWidth"> 3Guys1Segfault </span>
                       <span class="univ forceWidth">
                         University of Groningen
@@ -10070,9 +9553,7 @@
                   <td class="scorett">417</td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/68?restrict%5Bprobid%5D=15"
-                    >
+                    <a>
                       <div class="score_correct score_first">
                         7 <span> 1 try </span>
                       </div>
@@ -10084,9 +9565,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/68?restrict%5Bprobid%5D=18"
-                    >
+                    <a>
                       <div class="score_correct">12 <span> 1 try </span></div>
                     </a>
                   </td>
@@ -10094,17 +9573,13 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/68?restrict%5Bprobid%5D=20"
-                    >
+                    <a>
                       <div class="score_correct">49 <span> 2 tries </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/68?restrict%5Bprobid%5D=21"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 1 try </span>
                       </div>
@@ -10112,17 +9587,13 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/68?restrict%5Bprobid%5D=22"
-                    >
+                    <a>
                       <div class="score_correct">35 <span> 3 tries </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/68?restrict%5Bprobid%5D=23"
-                    >
+                    <a>
                       <div class="score_correct">
                         108 <span> 2 tries </span>
                       </div>
@@ -10130,9 +9601,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/68?restrict%5Bprobid%5D=24"
-                    >
+                    <a>
                       <div class="score_correct">
                         106 <span> 2 tries </span>
                       </div>
@@ -10143,9 +9612,7 @@
                 <tr class="" id="team:57">
                   <td class="scorepl">10</td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -10156,9 +9623,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -10169,7 +9634,7 @@
                     </a>
                   </td>
                   <td class="scoretn cl_FFFFFF" title="Web3 Enjoyers">
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/57">
+                    <a>
                       <span class="forceWidth"> Web3 Enjoyers </span>
                       <span class="univ forceWidth">
                         University of Groningen
@@ -10180,9 +9645,7 @@
                   <td class="scorett">724</td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/57?restrict%5Bprobid%5D=15"
-                    >
+                    <a>
                       <div class="score_correct">14 <span> 1 try </span></div>
                     </a>
                   </td>
@@ -10190,9 +9653,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/57?restrict%5Bprobid%5D=17"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 5 tries </span>
                       </div>
@@ -10200,9 +9661,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/57?restrict%5Bprobid%5D=18"
-                    >
+                    <a>
                       <div class="score_correct">59 <span> 1 try </span></div>
                     </a>
                   </td>
@@ -10210,17 +9669,13 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/57?restrict%5Bprobid%5D=20"
-                    >
+                    <a>
                       <div class="score_correct">117 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/57?restrict%5Bprobid%5D=21"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 1 try </span>
                       </div>
@@ -10228,25 +9683,19 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/57?restrict%5Bprobid%5D=22"
-                    >
+                    <a>
                       <div class="score_correct">156 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/57?restrict%5Bprobid%5D=23"
-                    >
+                    <a>
                       <div class="score_correct">178 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/57?restrict%5Bprobid%5D=24"
-                    >
+                    <a>
                       <div class="score_correct">200 <span> 1 try </span></div>
                     </a>
                   </td>
@@ -10255,9 +9704,7 @@
                 <tr class="" id="team:58">
                   <td class="scorepl">11</td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -10268,9 +9715,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -10281,7 +9726,7 @@
                     </a>
                   </td>
                   <td class="scoretn cl_FFFFFF" title="FranklyFrankenstein">
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/58">
+                    <a>
                       <span class="forceWidth"> FranklyFrankenstein </span>
                       <span class="univ forceWidth">
                         University of Groningen
@@ -10292,9 +9737,7 @@
                   <td class="scorett">965</td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/58?restrict%5Bprobid%5D=15"
-                    >
+                    <a>
                       <div class="score_correct">49 <span> 2 tries </span></div>
                     </a>
                   </td>
@@ -10302,9 +9745,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/58?restrict%5Bprobid%5D=17"
-                    >
+                    <a>
                       <div class="score_correct">
                         224 <span> 2 tries </span>
                       </div>
@@ -10312,9 +9753,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/58?restrict%5Bprobid%5D=18"
-                    >
+                    <a>
                       <div class="score_correct">
                         147 <span> 3 tries </span>
                       </div>
@@ -10324,9 +9763,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/58?restrict%5Bprobid%5D=20"
-                    >
+                    <a>
                       <div class="score_correct">95 <span> 1 try </span></div>
                     </a>
                   </td>
@@ -10334,9 +9771,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/58?restrict%5Bprobid%5D=22"
-                    >
+                    <a>
                       <div class="score_correct">
                         180 <span> 2 tries </span>
                       </div>
@@ -10344,17 +9779,13 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/58?restrict%5Bprobid%5D=23"
-                    >
+                    <a>
                       <div class="score_correct">170 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/58?restrict%5Bprobid%5D=24"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 5 tries </span>
                       </div>
@@ -10365,9 +9796,7 @@
                 <tr class="" id="team:66">
                   <td class="scorepl">12</td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -10378,9 +9807,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -10391,7 +9818,7 @@
                     </a>
                   </td>
                   <td class="scoretn cl_FFFFFF" title="Runtime Terror">
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/66">
+                    <a>
                       <span class="forceWidth"> Runtime Terror </span>
                       <span class="univ forceWidth">
                         University of Groningen
@@ -10402,9 +9829,7 @@
                   <td class="scorett">349</td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/66?restrict%5Bprobid%5D=15"
-                    >
+                    <a>
                       <div class="score_correct">29 <span> 1 try </span></div>
                     </a>
                   </td>
@@ -10412,9 +9837,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/66?restrict%5Bprobid%5D=17"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 4 tries </span>
                       </div>
@@ -10422,9 +9845,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/66?restrict%5Bprobid%5D=18"
-                    >
+                    <a>
                       <div class="score_correct">11 <span> 1 try </span></div>
                     </a>
                   </td>
@@ -10432,9 +9853,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/66?restrict%5Bprobid%5D=20"
-                    >
+                    <a>
                       <div class="score_correct">81 <span> 1 try </span></div>
                     </a>
                   </td>
@@ -10442,9 +9861,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/66?restrict%5Bprobid%5D=22"
-                    >
+                    <a>
                       <div class="score_correct">
                         119 <span> 3 tries </span>
                       </div>
@@ -10452,17 +9869,13 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/66?restrict%5Bprobid%5D=23"
-                    >
+                    <a>
                       <div class="score_correct">69 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/66?restrict%5Bprobid%5D=24"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 7 tries </span>
                       </div>
@@ -10473,9 +9886,7 @@
                 <tr class="" id="team:67">
                   <td class="scorepl">13</td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -10486,9 +9897,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -10499,7 +9908,7 @@
                     </a>
                   </td>
                   <td class="scoretn cl_FFFFFF" title="Black Panthers">
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/67">
+                    <a>
                       <span class="forceWidth"> Black Panthers </span>
                       <span class="univ forceWidth">
                         University of Groningen
@@ -10510,9 +9919,7 @@
                   <td class="scorett">497</td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/67?restrict%5Bprobid%5D=15"
-                    >
+                    <a>
                       <div class="score_correct">18 <span> 1 try </span></div>
                     </a>
                   </td>
@@ -10520,9 +9927,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/67?restrict%5Bprobid%5D=17"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 2 tries </span>
                       </div>
@@ -10530,9 +9935,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/67?restrict%5Bprobid%5D=18"
-                    >
+                    <a>
                       <div class="score_correct">35 <span> 1 try </span></div>
                     </a>
                   </td>
@@ -10540,9 +9943,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/67?restrict%5Bprobid%5D=20"
-                    >
+                    <a>
                       <div class="score_correct">64 <span> 3 tries </span></div>
                     </a>
                   </td>
@@ -10550,9 +9951,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/67?restrict%5Bprobid%5D=22"
-                    >
+                    <a>
                       <div class="score_correct">
                         144 <span> 2 tries </span>
                       </div>
@@ -10560,17 +9959,13 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/67?restrict%5Bprobid%5D=23"
-                    >
+                    <a>
                       <div class="score_correct">176 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/67?restrict%5Bprobid%5D=24"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 2 tries </span>
                       </div>
@@ -10581,9 +9976,7 @@
                 <tr class="" id="team:69">
                   <td class="scorepl">14</td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -10594,9 +9987,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -10607,7 +9998,7 @@
                     </a>
                   </td>
                   <td class="scoretn cl_FFFFFF" title="sambal-vp">
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/69">
+                    <a>
                       <span class="forceWidth"> sambal-vp </span>
                       <span class="univ forceWidth">
                         University of Groningen
@@ -10618,9 +10009,7 @@
                   <td class="scorett">551</td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/69?restrict%5Bprobid%5D=15"
-                    >
+                    <a>
                       <div class="score_correct">12 <span> 1 try </span></div>
                     </a>
                   </td>
@@ -10628,9 +10017,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/69?restrict%5Bprobid%5D=17"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 5 tries </span>
                       </div>
@@ -10638,17 +10025,13 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/69?restrict%5Bprobid%5D=18"
-                    >
+                    <a>
                       <div class="score_correct">21 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/69?restrict%5Bprobid%5D=19"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 5 tries </span>
                       </div>
@@ -10656,9 +10039,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/69?restrict%5Bprobid%5D=20"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 4 tries </span>
                       </div>
@@ -10666,9 +10047,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/69?restrict%5Bprobid%5D=21"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 1 try </span>
                       </div>
@@ -10676,9 +10055,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/69?restrict%5Bprobid%5D=22"
-                    >
+                    <a>
                       <div class="score_correct">
                         138 <span> 2 tries </span>
                       </div>
@@ -10686,17 +10063,13 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/69?restrict%5Bprobid%5D=23"
-                    >
+                    <a>
                       <div class="score_correct">160 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/69?restrict%5Bprobid%5D=24"
-                    >
+                    <a>
                       <div class="score_correct">200 <span> 1 try </span></div>
                     </a>
                   </td>
@@ -10705,9 +10078,7 @@
                 <tr class="" id="team:56">
                   <td class="scorepl">15</td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -10718,9 +10089,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -10731,7 +10100,7 @@
                     </a>
                   </td>
                   <td class="scoretn cl_FFFFFF" title="Under Water">
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/56">
+                    <a>
                       <span class="forceWidth"> Under Water </span>
                       <span class="univ forceWidth">
                         University of Groningen
@@ -10742,9 +10111,7 @@
                   <td class="scorett">567</td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/56?restrict%5Bprobid%5D=15"
-                    >
+                    <a>
                       <div class="score_correct">116 <span> 1 try </span></div>
                     </a>
                   </td>
@@ -10754,17 +10121,13 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/56?restrict%5Bprobid%5D=18"
-                    >
+                    <a>
                       <div class="score_correct">24 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/56?restrict%5Bprobid%5D=19"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 1 try </span>
                       </div>
@@ -10772,9 +10135,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/56?restrict%5Bprobid%5D=20"
-                    >
+                    <a>
                       <div class="score_correct">
                         149 <span> 3 tries </span>
                       </div>
@@ -10784,25 +10145,19 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/56?restrict%5Bprobid%5D=22"
-                    >
+                    <a>
                       <div class="score_correct">142 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/56?restrict%5Bprobid%5D=23"
-                    >
+                    <a>
                       <div class="score_correct">96 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/56?restrict%5Bprobid%5D=24"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 2 tries </span>
                       </div>
@@ -10813,9 +10168,7 @@
                 <tr class="" id="team:74">
                   <td class="scorepl">16</td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -10826,9 +10179,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -10842,7 +10193,7 @@
                     class="scoretn cl_FFFFFF"
                     title="Robin Sachsenweger Ballantyne"
                   >
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/74">
+                    <a>
                       <span class="forceWidth">
                         Robin Sachsenweger Ballantyne
                       </span>
@@ -10855,9 +10206,7 @@
                   <td class="scorett">657</td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/74?restrict%5Bprobid%5D=15"
-                    >
+                    <a>
                       <div class="score_correct">11 <span> 2 tries </span></div>
                     </a>
                   </td>
@@ -10865,9 +10214,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/74?restrict%5Bprobid%5D=17"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 6 tries </span>
                       </div>
@@ -10875,9 +10222,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/74?restrict%5Bprobid%5D=18"
-                    >
+                    <a>
                       <div class="score_correct">79 <span> 1 try </span></div>
                     </a>
                   </td>
@@ -10885,9 +10230,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/74?restrict%5Bprobid%5D=20"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 2 tries </span>
                       </div>
@@ -10897,25 +10240,19 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/74?restrict%5Bprobid%5D=22"
-                    >
+                    <a>
                       <div class="score_correct">151 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/74?restrict%5Bprobid%5D=23"
-                    >
+                    <a>
                       <div class="score_correct">172 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/74?restrict%5Bprobid%5D=24"
-                    >
+                    <a>
                       <div class="score_correct">
                         204 <span> 2 tries </span>
                       </div>
@@ -10926,9 +10263,7 @@
                 <tr class="" id="team:46">
                   <td class="scorepl">17</td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -10939,9 +10274,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -10952,7 +10285,7 @@
                     </a>
                   </td>
                   <td class="scoretn cl_FFFFFF" title="De Overheersers">
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/46">
+                    <a>
                       <span class="forceWidth"> De Overheersers </span>
                       <span class="univ forceWidth">
                         University of Groningen
@@ -10963,9 +10296,7 @@
                   <td class="scorett">696</td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/46?restrict%5Bprobid%5D=15"
-                    >
+                    <a>
                       <div class="score_correct">12 <span> 1 try </span></div>
                     </a>
                   </td>
@@ -10973,9 +10304,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/46?restrict%5Bprobid%5D=17"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 2 tries </span>
                       </div>
@@ -10983,17 +10312,13 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/46?restrict%5Bprobid%5D=18"
-                    >
+                    <a>
                       <div class="score_correct">63 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/46?restrict%5Bprobid%5D=19"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 3 tries </span>
                       </div>
@@ -11001,9 +10326,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/46?restrict%5Bprobid%5D=20"
-                    >
+                    <a>
                       <div class="score_correct">
                         186 <span> 4 tries </span>
                       </div>
@@ -11013,25 +10336,19 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/46?restrict%5Bprobid%5D=22"
-                    >
+                    <a>
                       <div class="score_correct">222 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/46?restrict%5Bprobid%5D=23"
-                    >
+                    <a>
                       <div class="score_correct">153 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/46?restrict%5Bprobid%5D=24"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 6 tries </span>
                       </div>
@@ -11042,9 +10359,7 @@
                 <tr class="" id="team:77">
                   <td class="scorepl">18</td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -11055,9 +10370,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -11068,7 +10381,7 @@
                     </a>
                   </td>
                   <td class="scoretn cl_FFFFFF" title="MathWinsX!">
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/77">
+                    <a>
                       <span class="forceWidth"> MathWinsX! </span>
                       <span class="univ forceWidth">
                         University of Groningen
@@ -11079,9 +10392,7 @@
                   <td class="scorett">270</td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/77?restrict%5Bprobid%5D=15"
-                    >
+                    <a>
                       <div class="score_correct">15 <span> 2 tries </span></div>
                     </a>
                   </td>
@@ -11091,17 +10402,13 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/77?restrict%5Bprobid%5D=18"
-                    >
+                    <a>
                       <div class="score_correct">55 <span> 2 tries </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/77?restrict%5Bprobid%5D=19"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 3 tries </span>
                       </div>
@@ -11109,9 +10416,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/77?restrict%5Bprobid%5D=20"
-                    >
+                    <a>
                       <div class="score_correct">93 <span> 1 try </span></div>
                     </a>
                   </td>
@@ -11119,9 +10424,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/77?restrict%5Bprobid%5D=22"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 6 tries </span>
                       </div>
@@ -11129,17 +10432,13 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/77?restrict%5Bprobid%5D=23"
-                    >
+                    <a>
                       <div class="score_correct">67 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/77?restrict%5Bprobid%5D=24"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 4 tries </span>
                       </div>
@@ -11150,9 +10449,7 @@
                 <tr class="" id="team:54">
                   <td class="scorepl">19</td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -11163,9 +10460,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -11176,7 +10471,7 @@
                     </a>
                   </td>
                   <td class="scoretn cl_FFFFFF" title="Arash**2">
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/54">
+                    <a>
                       <span class="forceWidth"> Arash**2 </span>
                       <span class="univ forceWidth">
                         University of Groningen
@@ -11187,9 +10482,7 @@
                   <td class="scorett">478</td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/54?restrict%5Bprobid%5D=15"
-                    >
+                    <a>
                       <div class="score_correct">105 <span> 1 try </span></div>
                     </a>
                   </td>
@@ -11199,9 +10492,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/54?restrict%5Bprobid%5D=18"
-                    >
+                    <a>
                       <div class="score_correct">41 <span> 1 try </span></div>
                     </a>
                   </td>
@@ -11209,9 +10500,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/54?restrict%5Bprobid%5D=20"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 5 tries </span>
                       </div>
@@ -11221,9 +10510,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/54?restrict%5Bprobid%5D=22"
-                    >
+                    <a>
                       <div class="score_correct">
                         112 <span> 5 tries </span>
                       </div>
@@ -11231,17 +10518,13 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/54?restrict%5Bprobid%5D=23"
-                    >
+                    <a>
                       <div class="score_correct">140 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/54?restrict%5Bprobid%5D=24"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 7 tries </span>
                       </div>
@@ -11252,9 +10535,7 @@
                 <tr class="" id="team:88">
                   <td class="scorepl">20</td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/4"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -11265,9 +10546,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/4"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -11278,7 +10557,7 @@
                     </a>
                   </td>
                   <td class="scoretn cl_FFFFFF" title="3B || !3B">
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/88">
+                    <a>
                       <span class="forceWidth"> 3B || !3B </span>
                       <span class="univ forceWidth">
                         Eindhoven University of Technology
@@ -11289,9 +10568,7 @@
                   <td class="scorett">512</td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/88?restrict%5Bprobid%5D=15"
-                    >
+                    <a>
                       <div class="score_correct">
                         106 <span> 2 tries </span>
                       </div>
@@ -11303,9 +10580,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/88?restrict%5Bprobid%5D=18"
-                    >
+                    <a>
                       <div class="score_correct">68 <span> 1 try </span></div>
                     </a>
                   </td>
@@ -11317,17 +10592,13 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/88?restrict%5Bprobid%5D=22"
-                    >
+                    <a>
                       <div class="score_correct">159 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/88?restrict%5Bprobid%5D=23"
-                    >
+                    <a>
                       <div class="score_correct">
                         119 <span> 3 tries </span>
                       </div>
@@ -11340,9 +10611,7 @@
                 <tr class="" id="team:47">
                   <td class="scorepl">21</td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -11353,9 +10622,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -11366,7 +10633,7 @@
                     </a>
                   </td>
                   <td class="scoretn cl_FFFFFF" title="💀">
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/47">
+                    <a>
                       <span class="forceWidth"> 💀 </span>
                       <span class="univ forceWidth">
                         University of Groningen
@@ -11377,9 +10644,7 @@
                   <td class="scorett">546</td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/47?restrict%5Bprobid%5D=15"
-                    >
+                    <a>
                       <div class="score_correct">24 <span> 1 try </span></div>
                     </a>
                   </td>
@@ -11389,17 +10654,13 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/47?restrict%5Bprobid%5D=18"
-                    >
+                    <a>
                       <div class="score_correct">85 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/47?restrict%5Bprobid%5D=19"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 1 try </span>
                       </div>
@@ -11407,9 +10668,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/47?restrict%5Bprobid%5D=20"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 1 try </span>
                       </div>
@@ -11417,9 +10676,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/47?restrict%5Bprobid%5D=21"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 5 tries </span>
                       </div>
@@ -11427,9 +10684,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/47?restrict%5Bprobid%5D=22"
-                    >
+                    <a>
                       <div class="score_correct">
                         211 <span> 5 tries </span>
                       </div>
@@ -11437,17 +10692,13 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/47?restrict%5Bprobid%5D=23"
-                    >
+                    <a>
                       <div class="score_correct">146 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/47?restrict%5Bprobid%5D=24"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 1 try </span>
                       </div>
@@ -11458,9 +10709,7 @@
                 <tr class="" id="team:70">
                   <td class="scorepl">22</td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -11471,9 +10720,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -11484,7 +10731,7 @@
                     </a>
                   </td>
                   <td class="scoretn cl_FFFFFF" title="Hopefully not last">
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/70">
+                    <a>
                       <span class="forceWidth"> Hopefully not last </span>
                       <span class="univ forceWidth">
                         University of Groningen
@@ -11495,9 +10742,7 @@
                   <td class="scorett">715</td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/70?restrict%5Bprobid%5D=15"
-                    >
+                    <a>
                       <div class="score_correct">
                         126 <span> 3 tries </span>
                       </div>
@@ -11509,17 +10754,13 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/70?restrict%5Bprobid%5D=18"
-                    >
+                    <a>
                       <div class="score_correct">109 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/70?restrict%5Bprobid%5D=19"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 4 tries </span>
                       </div>
@@ -11527,9 +10768,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/70?restrict%5Bprobid%5D=20"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 2 tries </span>
                       </div>
@@ -11539,9 +10778,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/70?restrict%5Bprobid%5D=22"
-                    >
+                    <a>
                       <div class="score_correct">
                         168 <span> 3 tries </span>
                       </div>
@@ -11549,9 +10786,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/70?restrict%5Bprobid%5D=23"
-                    >
+                    <a>
                       <div class="score_correct">
                         192 <span> 3 tries </span>
                       </div>
@@ -11559,9 +10794,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/70?restrict%5Bprobid%5D=24"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 1 try </span>
                       </div>
@@ -11572,9 +10805,7 @@
                 <tr class="" id="team:49">
                   <td class="scorepl">23</td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -11585,9 +10816,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -11598,7 +10827,7 @@
                     </a>
                   </td>
                   <td class="scoretn cl_FFFFFF" title="de gebroken tostis">
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/49">
+                    <a>
                       <span class="forceWidth"> de gebroken tostis </span>
                       <span class="univ forceWidth">
                         University of Groningen
@@ -11609,9 +10838,7 @@
                   <td class="scorett">108</td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/49?restrict%5Bprobid%5D=15"
-                    >
+                    <a>
                       <div class="score_correct">51 <span> 1 try </span></div>
                     </a>
                   </td>
@@ -11621,17 +10848,13 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/49?restrict%5Bprobid%5D=18"
-                    >
+                    <a>
                       <div class="score_correct">33 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/49?restrict%5Bprobid%5D=19"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 1 try </span>
                       </div>
@@ -11639,9 +10862,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/49?restrict%5Bprobid%5D=20"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 2 tries </span>
                       </div>
@@ -11651,9 +10872,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/49?restrict%5Bprobid%5D=22"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 2 tries </span>
                       </div>
@@ -11661,9 +10880,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/49?restrict%5Bprobid%5D=23"
-                    >
+                    <a>
                       <div class="score_correct score_first">
                         24 <span> 1 try </span>
                       </div>
@@ -11671,9 +10888,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/49?restrict%5Bprobid%5D=24"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 1 try </span>
                       </div>
@@ -11684,9 +10899,7 @@
                 <tr class="" id="team:76">
                   <td class="scorepl">24</td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -11697,9 +10910,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -11710,7 +10921,7 @@
                     </a>
                   </td>
                   <td class="scoretn cl_FFFFFF" title="null">
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/76">
+                    <a>
                       <span class="forceWidth"> null </span>
                       <span class="univ forceWidth">
                         University of Groningen
@@ -11727,9 +10938,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/76?restrict%5Bprobid%5D=18"
-                    >
+                    <a>
                       <div class="score_correct">32 <span> 1 try </span></div>
                     </a>
                   </td>
@@ -11737,9 +10946,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/76?restrict%5Bprobid%5D=20"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 7 tries </span>
                       </div>
@@ -11747,9 +10954,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/76?restrict%5Bprobid%5D=21"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 2 tries </span>
                       </div>
@@ -11757,25 +10962,19 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/76?restrict%5Bprobid%5D=22"
-                    >
+                    <a>
                       <div class="score_correct">26 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/76?restrict%5Bprobid%5D=23"
-                    >
+                    <a>
                       <div class="score_correct">82 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/76?restrict%5Bprobid%5D=24"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 2 tries </span>
                       </div>
@@ -11786,9 +10985,7 @@
                 <tr class="" id="team:73">
                   <td class="scorepl">25</td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -11799,9 +10996,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -11812,7 +11007,7 @@
                     </a>
                   </td>
                   <td class="scoretn cl_FFFFFF" title="Astrocode">
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/73">
+                    <a>
                       <span class="forceWidth"> Astrocode </span>
                       <span class="univ forceWidth">
                         University of Groningen
@@ -11823,9 +11018,7 @@
                   <td class="scorett">246</td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/73?restrict%5Bprobid%5D=15"
-                    >
+                    <a>
                       <div class="score_correct">18 <span> 2 tries </span></div>
                     </a>
                   </td>
@@ -11833,9 +11026,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/73?restrict%5Bprobid%5D=17"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 2 tries </span>
                       </div>
@@ -11843,9 +11034,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/73?restrict%5Bprobid%5D=18"
-                    >
+                    <a>
                       <div class="score_correct">81 <span> 1 try </span></div>
                     </a>
                   </td>
@@ -11853,9 +11042,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/73?restrict%5Bprobid%5D=20"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 2 tries </span>
                       </div>
@@ -11865,9 +11052,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/73?restrict%5Bprobid%5D=22"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 5 tries </span>
                       </div>
@@ -11875,9 +11060,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/73?restrict%5Bprobid%5D=23"
-                    >
+                    <a>
                       <div class="score_correct">127 <span> 1 try </span></div>
                     </a>
                   </td>
@@ -11888,9 +11071,7 @@
                 <tr class="" id="team:61">
                   <td class="scorepl">26</td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -11901,9 +11082,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -11914,7 +11093,7 @@
                     </a>
                   </td>
                   <td class="scoretn cl_FFFFFF" title="Flan in de pan">
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/61">
+                    <a>
                       <span class="forceWidth"> Flan in de pan </span>
                       <span class="univ forceWidth">
                         University of Groningen
@@ -11925,9 +11104,7 @@
                   <td class="scorett">273</td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/61?restrict%5Bprobid%5D=15"
-                    >
+                    <a>
                       <div class="score_correct">29 <span> 1 try </span></div>
                     </a>
                   </td>
@@ -11937,9 +11114,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/61?restrict%5Bprobid%5D=18"
-                    >
+                    <a>
                       <div class="score_correct">38 <span> 1 try </span></div>
                     </a>
                   </td>
@@ -11947,9 +11122,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/61?restrict%5Bprobid%5D=20"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 1 try </span>
                       </div>
@@ -11957,9 +11130,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/61?restrict%5Bprobid%5D=21"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 1 try </span>
                       </div>
@@ -11967,17 +11138,13 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/61?restrict%5Bprobid%5D=22"
-                    >
+                    <a>
                       <div class="score_correct">206 <span> 1 try </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/61?restrict%5Bprobid%5D=23"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 2 tries </span>
                       </div>
@@ -11990,9 +11157,7 @@
                 <tr class="" id="team:55">
                   <td class="scorepl">27</td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -12003,9 +11168,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -12016,7 +11179,7 @@
                     </a>
                   </td>
                   <td class="scoretn cl_FFFFFF" title="ChatGPT 2">
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/55">
+                    <a>
                       <span class="forceWidth"> ChatGPT 2 </span>
                       <span class="univ forceWidth">
                         University of Groningen
@@ -12027,9 +11190,7 @@
                   <td class="scorett">320</td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/55?restrict%5Bprobid%5D=15"
-                    >
+                    <a>
                       <div class="score_correct">
                         164 <span> 2 tries </span>
                       </div>
@@ -12041,9 +11202,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/55?restrict%5Bprobid%5D=18"
-                    >
+                    <a>
                       <div class="score_correct">13 <span> 1 try </span></div>
                     </a>
                   </td>
@@ -12051,9 +11210,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/55?restrict%5Bprobid%5D=20"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 4 tries </span>
                       </div>
@@ -12063,9 +11220,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/55?restrict%5Bprobid%5D=22"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 4 tries </span>
                       </div>
@@ -12073,9 +11228,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/55?restrict%5Bprobid%5D=23"
-                    >
+                    <a>
                       <div class="score_correct">123 <span> 1 try </span></div>
                     </a>
                   </td>
@@ -12086,9 +11239,7 @@
                 <tr class="" id="team:45">
                   <td class="scorepl">28</td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -12099,9 +11250,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -12112,7 +11261,7 @@
                     </a>
                   </td>
                   <td class="scoretn cl_FFFFFF" title="Pollos Hermanos">
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/45">
+                    <a>
                       <span class="forceWidth"> Pollos Hermanos </span>
                       <span class="univ forceWidth">
                         University of Groningen
@@ -12123,9 +11272,7 @@
                   <td class="scorett">550</td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/45?restrict%5Bprobid%5D=15"
-                    >
+                    <a>
                       <div class="score_correct">
                         195 <span> 9 tries </span>
                       </div>
@@ -12137,9 +11284,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/45?restrict%5Bprobid%5D=18"
-                    >
+                    <a>
                       <div class="score_correct">25 <span> 1 try </span></div>
                     </a>
                   </td>
@@ -12147,9 +11292,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/45?restrict%5Bprobid%5D=20"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 2 tries </span>
                       </div>
@@ -12159,9 +11302,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/45?restrict%5Bprobid%5D=22"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 11 tries </span>
                       </div>
@@ -12169,9 +11310,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/45?restrict%5Bprobid%5D=23"
-                    >
+                    <a>
                       <div class="score_correct">
                         150 <span> 2 tries </span>
                       </div>
@@ -12184,9 +11323,7 @@
                 <tr class="" id="team:51">
                   <td class="scorepl">29</td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -12197,9 +11334,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -12210,7 +11345,7 @@
                     </a>
                   </td>
                   <td class="scoretn cl_FFFFFF" title="Academic Weapons">
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/51">
+                    <a>
                       <span class="forceWidth"> Academic Weapons </span>
                       <span class="univ forceWidth">
                         University of Groningen
@@ -12221,9 +11356,7 @@
                   <td class="scorett">51</td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/51?restrict%5Bprobid%5D=15"
-                    >
+                    <a>
                       <div class="score_correct">20 <span> 1 try </span></div>
                     </a>
                   </td>
@@ -12231,9 +11364,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/51?restrict%5Bprobid%5D=17"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 4 tries </span>
                       </div>
@@ -12241,9 +11372,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/51?restrict%5Bprobid%5D=18"
-                    >
+                    <a>
                       <div class="score_correct">31 <span> 1 try </span></div>
                     </a>
                   </td>
@@ -12251,9 +11380,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/51?restrict%5Bprobid%5D=20"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 8 tries </span>
                       </div>
@@ -12261,9 +11388,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/51?restrict%5Bprobid%5D=21"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 1 try </span>
                       </div>
@@ -12271,9 +11396,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/51?restrict%5Bprobid%5D=22"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 1 try </span>
                       </div>
@@ -12281,9 +11404,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/51?restrict%5Bprobid%5D=23"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 1 try </span>
                       </div>
@@ -12296,9 +11417,7 @@
                 <tr class="" id="team:59">
                   <td class="scorepl">30</td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -12309,9 +11428,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -12322,7 +11439,7 @@
                     </a>
                   </td>
                   <td class="scoretn cl_FFFFFF" title="*Insert name here*">
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/59">
+                    <a>
                       <span class="forceWidth"> *Insert name here* </span>
                       <span class="univ forceWidth">
                         University of Groningen
@@ -12333,9 +11450,7 @@
                   <td class="scorett">289</td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/59?restrict%5Bprobid%5D=15"
-                    >
+                    <a>
                       <div class="score_correct">
                         174 <span> 3 tries </span>
                       </div>
@@ -12347,17 +11462,13 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/59?restrict%5Bprobid%5D=18"
-                    >
+                    <a>
                       <div class="score_correct">55 <span> 2 tries </span></div>
                     </a>
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/59?restrict%5Bprobid%5D=19"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 5 tries </span>
                       </div>
@@ -12365,9 +11476,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/59?restrict%5Bprobid%5D=20"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 2 tries </span>
                       </div>
@@ -12377,9 +11486,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/59?restrict%5Bprobid%5D=22"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 5 tries </span>
                       </div>
@@ -12394,9 +11501,7 @@
                 <tr class="" id="team:50">
                   <td class="scorepl">31</td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -12407,9 +11512,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -12420,7 +11523,7 @@
                     </a>
                   </td>
                   <td class="scoretn cl_FFFFFF" title="Mega Mind">
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/50">
+                    <a>
                       <span class="forceWidth"> Mega Mind </span>
                       <span class="univ forceWidth">
                         University of Groningen
@@ -12437,9 +11540,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/50?restrict%5Bprobid%5D=18"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 9 tries </span>
                       </div>
@@ -12449,9 +11550,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/50?restrict%5Bprobid%5D=20"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 3 tries </span>
                       </div>
@@ -12459,9 +11558,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/50?restrict%5Bprobid%5D=21"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 1 try </span>
                       </div>
@@ -12469,9 +11566,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/50?restrict%5Bprobid%5D=22"
-                    >
+                    <a>
                       <div class="score_correct">
                         122 <span> 2 tries </span>
                       </div>
@@ -12479,9 +11574,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/50?restrict%5Bprobid%5D=23"
-                    >
+                    <a>
                       <div class="score_correct">87 <span> 5 tries </span></div>
                     </a>
                   </td>
@@ -12492,9 +11585,7 @@
                 <tr class="" id="team:60">
                   <td class="scorepl">32</td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -12505,9 +11596,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -12518,7 +11607,7 @@
                     </a>
                   </td>
                   <td class="scoretn cl_FFFFFF" title="Insert Team Name Here">
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/60">
+                    <a>
                       <span class="forceWidth"> Insert Team Name Here </span>
                       <span class="univ forceWidth">
                         University of Groningen
@@ -12529,9 +11618,7 @@
                   <td class="scorett">330</td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/60?restrict%5Bprobid%5D=15"
-                    >
+                    <a>
                       <div class="score_correct">
                         237 <span> 2 tries </span>
                       </div>
@@ -12541,9 +11628,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/60?restrict%5Bprobid%5D=17"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 10 tries </span>
                       </div>
@@ -12551,9 +11636,7 @@
                   </td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/60?restrict%5Bprobid%5D=18"
-                    >
+                    <a>
                       <div class="score_correct">73 <span> 1 try </span></div>
                     </a>
                   </td>
@@ -12574,9 +11657,7 @@
                 <tr class="" id="team:89">
                   <td class="scorepl">33</td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/4"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -12587,9 +11668,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/4"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -12600,7 +11679,7 @@
                     </a>
                   </td>
                   <td class="scoretn cl_FFFFFF" title="Badass">
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/89">
+                    <a>
                       <span class="forceWidth"> Badass </span>
                       <span class="univ forceWidth">
                         Eindhoven University of Technology
@@ -12634,9 +11713,7 @@
                 <tr class="" id="team:63">
                   <td class="scorepl"></td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -12647,9 +11724,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -12660,7 +11735,7 @@
                     </a>
                   </td>
                   <td class="scoretn cl_FFFFFF" title="Bug slayers">
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/63">
+                    <a>
                       <span class="forceWidth"> Bug slayers </span>
                       <span class="univ forceWidth">
                         University of Groningen
@@ -12694,9 +11769,7 @@
                 <tr class="" id="team:53">
                   <td class="scorepl"></td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -12707,9 +11780,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -12720,7 +11791,7 @@
                     </a>
                   </td>
                   <td class="scoretn cl_FFFFFF" title="Kwark">
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/53">
+                    <a>
                       <span class="forceWidth"> Kwark </span>
                       <span class="univ forceWidth">
                         University of Groningen
@@ -12754,9 +11825,7 @@
                 <tr class="" id="team:48">
                   <td class="scorepl"></td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -12767,9 +11836,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -12780,7 +11847,7 @@
                     </a>
                   </td>
                   <td class="scoretn cl_FFFFFF" title="los payasos justicieros">
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/48">
+                    <a>
                       <span class="forceWidth"> los payasos justicieros </span>
                       <span class="univ forceWidth">
                         University of Groningen
@@ -12814,9 +11881,7 @@
                 <tr class="" id="team:62">
                   <td class="scorepl"></td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -12827,9 +11892,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -12840,7 +11903,7 @@
                     </a>
                   </td>
                   <td class="scoretn cl_FFFFFF" title="Mind Goblin">
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/62">
+                    <a>
                       <span class="forceWidth"> Mind Goblin </span>
                       <span class="univ forceWidth">
                         University of Groningen
@@ -12874,9 +11937,7 @@
                 <tr class="" id="team:93">
                   <td class="scorepl"></td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -12887,9 +11948,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -12900,7 +11959,7 @@
                     </a>
                   </td>
                   <td class="scoretn cl_FFFFFF" title="Rafael Tappe Maestro">
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/93">
+                    <a>
                       <span class="forceWidth"> Rafael Tappe Maestro </span>
                       <span class="univ forceWidth">
                         University of Groningen
@@ -12934,9 +11993,7 @@
                 <tr class="" id="team:64">
                   <td class="scorepl"></td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         src="./gapc2023_files/nl.svg"
@@ -12947,9 +12004,7 @@
                     </a>
                   </td>
                   <td class="scoreaf">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/affiliations/2"
-                    >
+                    <a>
                       <img
                         loading="lazy"
                         class="affiliation-logo"
@@ -12960,7 +12015,7 @@
                     </a>
                   </td>
                   <td class="scoretn cl_FFFFFF" title="Slayers">
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/64">
+                    <a>
                       <span class="forceWidth"> Slayers </span>
                       <span class="univ forceWidth">
                         University of Groningen
@@ -12977,9 +12032,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/64?restrict%5Bprobid%5D=18"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 6 tries </span>
                       </div>
@@ -12989,9 +12042,7 @@
                   <td class="score_cell"></td>
 
                   <td class="score_cell">
-                    <a
-                      href="https://gapc23.cloudcontest.org/jury/teams/64?restrict%5Bprobid%5D=20"
-                    >
+                    <a>
                       <div class="score_incorrect">
                         &nbsp; <span> 3 tries </span>
                       </div>
@@ -13013,7 +12064,7 @@
                   <td title="total solved" class="scorenc">156</td>
                   <td></td>
                   <td style="text-align: left">
-                    <a href="https://gapc23.cloudcontest.org/jury/problems/15">
+                    <a>
                       <i class="fas fa-thumbs-up fa-fw"></i>
                       <span
                         class="submcorrect"
@@ -13051,7 +12102,7 @@
                     </a>
                   </td>
                   <td style="text-align: left">
-                    <a href="https://gapc23.cloudcontest.org/jury/problems/16">
+                    <a>
                       <i class="fas fa-thumbs-up fa-fw"></i>
                       <span
                         class="submcorrect"
@@ -13089,7 +12140,7 @@
                     </a>
                   </td>
                   <td style="text-align: left">
-                    <a href="https://gapc23.cloudcontest.org/jury/problems/17">
+                    <a>
                       <i class="fas fa-thumbs-up fa-fw"></i>
                       <span
                         class="submcorrect"
@@ -13127,7 +12178,7 @@
                     </a>
                   </td>
                   <td style="text-align: left">
-                    <a href="https://gapc23.cloudcontest.org/jury/problems/18">
+                    <a>
                       <i class="fas fa-thumbs-up fa-fw"></i>
                       <span
                         class="submcorrect"
@@ -13165,7 +12216,7 @@
                     </a>
                   </td>
                   <td style="text-align: left">
-                    <a href="https://gapc23.cloudcontest.org/jury/problems/19">
+                    <a>
                       <i class="fas fa-thumbs-up fa-fw"></i>
                       <span
                         class="submcorrect"
@@ -13203,7 +12254,7 @@
                     </a>
                   </td>
                   <td style="text-align: left">
-                    <a href="https://gapc23.cloudcontest.org/jury/problems/20">
+                    <a>
                       <i class="fas fa-thumbs-up fa-fw"></i>
                       <span
                         class="submcorrect"
@@ -13241,7 +12292,7 @@
                     </a>
                   </td>
                   <td style="text-align: left">
-                    <a href="https://gapc23.cloudcontest.org/jury/problems/21">
+                    <a>
                       <i class="fas fa-thumbs-up fa-fw"></i>
                       <span
                         class="submcorrect"
@@ -13279,7 +12330,7 @@
                     </a>
                   </td>
                   <td style="text-align: left">
-                    <a href="https://gapc23.cloudcontest.org/jury/problems/22">
+                    <a>
                       <i class="fas fa-thumbs-up fa-fw"></i>
                       <span
                         class="submcorrect"
@@ -13317,7 +12368,7 @@
                     </a>
                   </td>
                   <td style="text-align: left">
-                    <a href="https://gapc23.cloudcontest.org/jury/problems/23">
+                    <a>
                       <i class="fas fa-thumbs-up fa-fw"></i>
                       <span
                         class="submcorrect"
@@ -13355,7 +12406,7 @@
                     </a>
                   </td>
                   <td style="text-align: left">
-                    <a href="https://gapc23.cloudcontest.org/jury/problems/24">
+                    <a>
                       <i class="fas fa-thumbs-up fa-fw"></i>
                       <span
                         class="submcorrect"
@@ -13399,7 +12450,7 @@
                   <td class="scoreaf"></td>
                   <td class="scoreaf"></td>
                   <td class="scoretn cl_ff2bea" title="DomJudge">
-                    <a href="https://gapc23.cloudcontest.org/jury/teams/41">
+                    <a>
                       <span class="forceWidth"> DomJudge </span>
                       <span class="univ forceWidth"> </span>
                     </a>
@@ -13435,7 +12486,7 @@
                   <td title="total solved" class="scorenc">0</td>
                   <td></td>
                   <td style="text-align: left">
-                    <a href="https://gapc23.cloudcontest.org/jury/problems/15">
+                    <a>
                       <i class="fas fa-thumbs-up fa-fw"></i>
                       <span
                         class="submcorrect"
@@ -13473,7 +12524,7 @@
                     </a>
                   </td>
                   <td style="text-align: left">
-                    <a href="https://gapc23.cloudcontest.org/jury/problems/16">
+                    <a>
                       <i class="fas fa-thumbs-up fa-fw"></i>
                       <span
                         class="submcorrect"
@@ -13511,7 +12562,7 @@
                     </a>
                   </td>
                   <td style="text-align: left">
-                    <a href="https://gapc23.cloudcontest.org/jury/problems/17">
+                    <a>
                       <i class="fas fa-thumbs-up fa-fw"></i>
                       <span
                         class="submcorrect"
@@ -13549,7 +12600,7 @@
                     </a>
                   </td>
                   <td style="text-align: left">
-                    <a href="https://gapc23.cloudcontest.org/jury/problems/18">
+                    <a>
                       <i class="fas fa-thumbs-up fa-fw"></i>
                       <span
                         class="submcorrect"
@@ -13587,7 +12638,7 @@
                     </a>
                   </td>
                   <td style="text-align: left">
-                    <a href="https://gapc23.cloudcontest.org/jury/problems/19">
+                    <a>
                       <i class="fas fa-thumbs-up fa-fw"></i>
                       <span
                         class="submcorrect"
@@ -13625,7 +12676,7 @@
                     </a>
                   </td>
                   <td style="text-align: left">
-                    <a href="https://gapc23.cloudcontest.org/jury/problems/20">
+                    <a>
                       <i class="fas fa-thumbs-up fa-fw"></i>
                       <span
                         class="submcorrect"
@@ -13663,7 +12714,7 @@
                     </a>
                   </td>
                   <td style="text-align: left">
-                    <a href="https://gapc23.cloudcontest.org/jury/problems/21">
+                    <a>
                       <i class="fas fa-thumbs-up fa-fw"></i>
                       <span
                         class="submcorrect"
@@ -13701,7 +12752,7 @@
                     </a>
                   </td>
                   <td style="text-align: left">
-                    <a href="https://gapc23.cloudcontest.org/jury/problems/22">
+                    <a>
                       <i class="fas fa-thumbs-up fa-fw"></i>
                       <span
                         class="submcorrect"
@@ -13739,7 +12790,7 @@
                     </a>
                   </td>
                   <td style="text-align: left">
-                    <a href="https://gapc23.cloudcontest.org/jury/problems/23">
+                    <a>
                       <i class="fas fa-thumbs-up fa-fw"></i>
                       <span
                         class="submcorrect"
@@ -13777,7 +12828,7 @@
                     </a>
                   </td>
                   <td style="text-align: left">
-                    <a href="https://gapc23.cloudcontest.org/jury/problems/24">
+                    <a>
                       <i class="fas fa-thumbs-up fa-fw"></i>
                       <span
                         class="submcorrect"
@@ -13827,25 +12878,19 @@
               <thead>
                 <tr>
                   <th scope="col">
-                    <a href="https://gapc23.cloudcontest.org/jury/categories"
-                      >Categories</a
-                    >
+                    <a>Categories</a>
                   </th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>
-                    <a href="https://gapc23.cloudcontest.org/jury/categories/3"
-                      >Participants</a
-                    >
+                    <a>Participants</a>
                   </td>
                 </tr>
                 <tr style="background: #ff2bea">
                   <td>
-                    <a href="https://gapc23.cloudcontest.org/jury/categories/1"
-                      >System</a
-                    >
+                    <a>System</a>
                   </td>
                 </tr>
               </tbody>
@@ -19946,7 +18991,6 @@
                                               _ngcontent-iyh-c53=""
                                               routerlinkactive="active-folder"
                                               class="folder-link active-folder"
-                                              href="https://gapc23.cloudcontest.org/"
                                               ><span
                                                 _ngcontent-iyh-c53=""
                                                 class="folder-title text-truncate"
@@ -20149,7 +19193,6 @@
                                               _ngcontent-iyh-c53=""
                                               routerlinkactive="active-folder"
                                               class="folder-link"
-                                              href="https://gapc23.cloudcontest.org/"
                                               ><span
                                                 _ngcontent-iyh-c53=""
                                                 class="folder-title text-truncate"
@@ -20359,7 +19402,6 @@
                                                             _ngcontent-iyh-c53=""
                                                             routerlinkactive="active-folder"
                                                             class="folder-link"
-                                                            href="https://gapc23.cloudcontest.org/"
                                                             ><span
                                                               _ngcontent-iyh-c53=""
                                                               class="folder-title text-truncate"
@@ -20854,10 +19896,7 @@
                                         _ngcontent-iyh-c75=""
                                         class="main-panel-website-card-data"
                                       >
-                                        <a
-                                          _ngcontent-iyh-c75=""
-                                          rel="noopener"
-                                          href="chrome-extension://cbnaodkpfinfiipjblikofhlhlcickei/src/pdfviewer/web/viewer.html?file=file:///C:/Groningen%20Files/University%20Books/Block%202B/James%20W.%20Kalat%20-%20Biological%20Psychology-Cengage%20Learning%20(2018).pdf"
+                                        <a _ngcontent-iyh-c75="" rel="noopener"
                                           >Biological Psychology, 13th ed. -
                                           James W. Kalat - Biological
                                           Psychology-Cengage Learning
@@ -22063,10 +21102,7 @@
                                         _ngcontent-iyh-c75=""
                                         class="main-panel-website-card-data"
                                       >
-                                        <a
-                                          _ngcontent-iyh-c75=""
-                                          rel="noopener"
-                                          href="chrome-extension://cbnaodkpfinfiipjblikofhlhlcickei/src/pdfviewer/web/viewer.html?file=file:///C:/Groningen%20Files/University%20Books/Year%202/(Chapman%20&amp;%20Hall_CRC%20the%20R%20series)%20Verzani,%20John%20-%20Using%20R%20for%20Introductory%20Statistics-CRC%20Press%20(2014).pdf"
+                                        <a _ngcontent-iyh-c75="" rel="noopener"
                                           >(Chapman &amp; Hall_CRC the R series)
                                           Verzani, John - Using R for
                                           Introductory Statistics-CRC Press
@@ -22863,10 +21899,7 @@
                                         _ngcontent-iyh-c75=""
                                         class="main-panel-website-card-data"
                                       >
-                                        <a
-                                          _ngcontent-iyh-c75=""
-                                          rel="noopener"
-                                          href="chrome-extension://cbnaodkpfinfiipjblikofhlhlcickei/src/pdfviewer/web/viewer.html?file=https://brightspace.rug.nl//content/enforced/80559-WBAI007-05.2022-2023.1/slides1_w7_handout.pdf?_"
+                                        <a _ngcontent-iyh-c75="" rel="noopener"
                                           >slides1_w7_handout.pdf</a
                                         >
                                         <div
@@ -23463,10 +22496,7 @@
                                         _ngcontent-iyh-c75=""
                                         class="main-panel-website-card-data"
                                       >
-                                        <a
-                                          _ngcontent-iyh-c75=""
-                                          rel="noopener"
-                                          href="chrome-extension://cbnaodkpfinfiipjblikofhlhlcickei/src/pdfviewer/web/viewer.html?file=file:///C:/Users/Jeremias%20Ferrao/Downloads/slides1_w7_handout.pdf"
+                                        <a _ngcontent-iyh-c75="" rel="noopener"
                                           >slides1_w7_handout.pdf</a
                                         >
                                         <div
@@ -23723,10 +22753,7 @@
                                         _ngcontent-iyh-c75=""
                                         class="main-panel-website-card-data"
                                       >
-                                        <a
-                                          _ngcontent-iyh-c75=""
-                                          rel="noopener"
-                                          href="chrome-extension://cbnaodkpfinfiipjblikofhlhlcickei/src/pdfviewer/web/viewer.html?file=file:///C:/Groningen%20Files/University%20Books/Year%202/Michael%20Wooldridge%20-%20An%20Introduction%20to%20MultiAgent%20Systems%20(2009).pdf"
+                                        <a _ngcontent-iyh-c75="" rel="noopener"
                                           >Michael Wooldridge - An Introduction
                                           to MultiAgent Systems (2009).pdf</a
                                         >
