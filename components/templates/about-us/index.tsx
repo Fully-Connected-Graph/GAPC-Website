@@ -62,6 +62,8 @@ const AboutUs = () => {
                 typewriter
                   .callFunction(({ elements: { cursor } }) => {
                     cursor.style.display = "inline-block";
+                    // Out of flow so the cursor doesn't shift the centered text
+                    cursor.style.position = "absolute";
                   })
                   .changeDelay(70)
                   .changeDeleteSpeed(70)
