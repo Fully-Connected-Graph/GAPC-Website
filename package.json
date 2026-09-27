@@ -21,12 +21,12 @@
     "clsx": "^2.1.0",
     "github-markdown-css": "^5.5.1",
     "gray-matter": "^4.0.3",
-    "lucide-react": "^0.331.0",
+    "lucide-react": "^0.577.0",
     "markdown-it": "^14.0.0",
     "markdown-it-highlightjs": "^4.0.1",
-    "next": "^14.2.26",
-    "react": "^18",
-    "react-dom": "^18",
+    "next": "^15.5.26",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
     "run": "^1.5.0",
     "tailwind-merge": "^2.2.1",
     "tailwindcss-animate": "^1.0.7",
@@ -35,16 +35,21 @@
   "devDependencies": {
     "@types/markdown-it": "^13.0.7",
     "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
-    "eslint-config-next": "14.1.0",
+    "eslint-config-next": "^15.5.26",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
-    "postcss": "^8",
+    "postcss": "^8.5.28",
     "prettier": "3.2.5",
-    "tailwindcss": "^3.3.0",
+    "tailwindcss": "^3.4.19",
     "typescript": "^5"
+  },
+  "overrides": {
+    "next": {
+      "postcss": "$postcss"
+    }
   }
 }

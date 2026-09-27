@@ -5,7 +5,12 @@ import { X } from "lucide-react";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
-const Page = async ({ params }: { params: { slug: string[] } }) => {
+const Page = async ({
+  params: paramsPromise,
+}: {
+  params: Promise<{ slug?: string[] }>;
+}) => {
+  const params = await paramsPromise;
   const { data, markdown, error } = await create(params);
 
   if (error || !data || !markdown) {
