@@ -5,7 +5,7 @@ thumbnail: /assets/thumbnails/winners.jpeg
 
 ## Registration
 
-This is an open contest to all students within the Groningen region. It has a limit of total 40 teams. Before registering, please read the rules of the contest and these can be found [here](/rules/).
+This is an open contest to all students within the Groningen region. Before registering, please read the rules of the contest and these can be found [here](/rules/).
 
 In the contest, the teams can have 1, 2 or 3 members. There is also the option to register alone and then be added in a random team. All the options can be requested in the registration form. Regarding teams, only the captain needs to make the registration. To register, click the button below.
 
