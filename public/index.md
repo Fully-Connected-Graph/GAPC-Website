@@ -12,10 +12,7 @@ To solve the problems, you will be able to use Java, Python, C and C++. In the e
 
 ## See past years!
 
-Check out last year's <a  target="_blank" href="https://www.svcover.nl/photos/1578">
-photo album
-</a>
-to see how it was last year!
+Check out last year's [photo album](https://www.svcover.nl/photos/1701) to see how it was last year!
 
 <a href="https://www.svcover.nl/photos/1522"  class="overflow-hidden">
     <video src="/assets/gapc-2022-slideshow.mp4" autoplay muted loop class="h-60 m-auto"/>
@@ -24,7 +21,7 @@ to see how it was last year!
 <br/>
 
 <span class="text-md">
-    Additionaly, if you wish to see the problems and solutions of the previous years, you can find them 
+    Additionally, if you wish to see the problems and solutions of the previous years, you can find them 
     <a href="/archive/">here</a>.
 </span>
 
