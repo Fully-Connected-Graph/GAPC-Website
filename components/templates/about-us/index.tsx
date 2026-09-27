@@ -77,10 +77,6 @@ const AboutUs = () => {
                     cursor.style.animation = "none";
                     cursor.style.transition = "opacity 2s ease-out";
                     cursor.style.opacity = "0";
-
-                    setTimeout(() => {
-                      cursor.style.display = "none";
-                    }, 300);
                   })
                   .callFunction(() => {
                     setNewYear(true);
@@ -109,15 +105,22 @@ const AboutUs = () => {
 
           {/* Button with smoother color transition */}
           <Button
+            asChild
             variant="outline"
-            className={`text-white text-3xl p-10 transition-colors ease-in-out cursor-default opacity-80 ${
+            className={`text-white text-3xl p-10 transition-colors ease-in-out opacity-80 hover:opacity-100 hover:text-white ${
               newYear
-                ? "bg-[var(--gapc-color-new-dark)] border-[var(--gapc-color-new-dark)]"
-                : "bg-[var(--gapc-color-dark)] border-[var(--gapc-color-dark)]"
+                ? "bg-[var(--gapc-color-new-dark)] border-[var(--gapc-color-new-dark)] hover:bg-[var(--gapc-color-new-dark)]"
+                : "bg-[var(--gapc-color-dark)] border-[var(--gapc-color-dark)] hover:bg-[var(--gapc-color-dark)]"
             }`}
             style={{ transitionDuration: `${animationDuration}ms` }}
           >
-            Sign-ups opening soon!
+            <a
+              href="https://forms.gle/sM5kiHmtXJybCbFv8"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Sign up now!
+            </a>
           </Button>
         </div>
       </div>
