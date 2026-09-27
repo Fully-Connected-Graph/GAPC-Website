@@ -107,10 +107,10 @@ const AboutUs = () => {
           <Button
             asChild
             variant="outline"
-            className={`text-white text-3xl p-10 transition-colors ease-in-out opacity-80 hover:opacity-100 hover:text-white ${
+            className={`text-white text-3xl p-10 border-2 border-white transition-colors ease-in-out opacity-80 hover:opacity-100 hover:text-white ${
               newYear
-                ? "bg-[var(--gapc-color-new-dark)] border-[var(--gapc-color-new-dark)] hover:bg-[var(--gapc-color-new-dark)]"
-                : "bg-[var(--gapc-color-dark)] border-[var(--gapc-color-dark)] hover:bg-[var(--gapc-color-dark)]"
+                ? "bg-[var(--gapc-color-new-dark)] hover:bg-[var(--gapc-color-new-dark)]"
+                : "bg-[var(--gapc-color-dark)] hover:bg-[var(--gapc-color-dark)]"
             }`}
             style={{ transitionDuration: `${animationDuration}ms` }}
           >
