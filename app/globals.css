@@ -96,6 +96,11 @@ html {
   padding: 1rem;
 }
 
+/* Cover logo is dark; invert to white on dark bg */
+.markdown-body img[src*="/assets/cover_logo"] {
+  filter: brightness(0) invert(1);
+}
+
 /* img + em (caption) */
 .markdown-body img + em {
   @apply block text-center text-xs text-muted-foreground;
