@@ -89,6 +89,13 @@ html {
   @apply mx-auto my-4;
 }
 
+/* Sponsor logos have dark elements invisible on dark bg; put them on a light chip */
+.markdown-body img[src*="/assets/sponsors/"] {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
 /* img + em (caption) */
 .markdown-body img + em {
   @apply block text-center text-xs text-muted-foreground;
